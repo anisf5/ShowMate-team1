@@ -1,0 +1,243 @@
+pages: 17
+
+===== PAGE 1 =====
+Shellmates Club
+Presentation
+[images on page: 2]
+
+===== PAGE 2 =====
+01
+Club identity When/why the club was created 
+Mission and vision What makes us diffrent?
+Who Are We?
+02
+Teams / departments Community culture 
+Achievements and reach 
+Contents
+Our Club Structure
+03
+Main activities Workshops & training 
+Competitions / CTFs Conferences Projects 
+Social activities 
+What Do We Do?
+04
+Showcase of our biggest events Previous editions 
+Results and achievements
+Our Events & Projects
+05
+Technical skills / Soft skills Teamwork 
+Networking Real-world experience ...
+What Will You Gain?
+06
+A general thought about the presentation 
+topic
+Conclusion
+[images on page: 2]
+
+===== PAGE 3 =====
+01 Who Are We?
+[images on page: 1]
+
+===== PAGE 4 =====
+What is Shellmates
+Shellmates is a student club at the National Higher School of 
+Computer Science in Algiers (ESI). Founded in 2011 under the 
+name OWASP, our club specializes in the field of 
+Cybersecurity. We aim to promote cybersecurity awareness 
+and culture in Algeria by organizing various events 
+throughout the year.
+Our Objectives
+01
+Create a space for knowledge sharing and 
+constructive competition.
+02
+Introduce those interested to the fundamentals 
+of cybersecurity.
+03 Aim to gain international recognition.
+[images on page: 3]
+
+===== PAGE 5 =====
+02
+Our Club 
+Structure
+[images on page: 1]
+
+===== PAGE 6 =====
+Club Departments
+HR 
+ Human Resources: Manages the club's members and 
+internal organization. HR handles recruitment, member 
+integration, team coordination, follow-up, and maintaining a 
+healthy and motivating environment within the club.
+Design: Creates the club's visual identity and designs its visual 
+content. This includes posters, social media designs, branding, 
+event visuals, presentations, and other graphic materials.
+Relex: Manages the club's relationships with external entities. 
+Relex works on partnerships, sponsorships, networking, and 
+communication with companies, organizations, other clubs, and 
+professionals.
+Technical Department: Leads the club's technical and 
+cybersecurity activities. It manages the club's technical 
+infrastructure and organizes workshops, training sessions, 
+meetups, and other activities related to cybersecurity.
+Design
+HR
+Relex
+Technical
+[images on page: 1]
+
+===== PAGE 7 =====
+Club Departments
+Events: Plans and organizes the club's events from concept to 
+execution. The department handles logistics, planning, 
+coordination, scheduling, and on-site organization to ensure 
+events run smoothly.
+Communication: Manages how the club communicates with its 
+audience. It creates communication strategies, manages social 
+media and announcements, promotes activities, and ensures 
+the club maintains a consistent public presence.
+Development: Builds and maintains the club's digital projects 
+and platforms. This includes developing websites, internal tools, 
+applications, and other technical projects that support the club 
+and its activities.
+Multimedia: Produces the club's photo, video, and audiovisual 
+content. The department covers events, creates promotional 
+videos, edits photos and videos, and documents the club's 
+activities.
+Multi
+comm
+Event
+Dev
+[images on page: 1]
+
+===== PAGE 8 =====
+Club Community & Impact
+Monthly views
+125k
+100k
+75k
+50k
+25k
+Other Media
+Platforms
+Platforms
+[images on page: 2]
+
+===== PAGE 9 =====
+03
+What do we
+Do?
+[images on page: 1]
+
+===== PAGE 10 =====
+Club Activities
+Shellmates follows a hands-on, workshop-driven approach to 
+cybersecurity education. At the beginning of each season, we introduce 
+members to the fundamentals of cybersecurity, followed by specialized 
+workshops covering various offensive security fields, including Web 
+Pentesting, Cryptography, Pwn, Reverse Engineering, and more. Beyond 
+learning, we put knowledge into practice through internal and external 
+events. Internal events are designed exclusively for members, providing 
+a space to apply acquired skills through practical challenges and team-
+based activities. Our external events are open to a wider audience and 
+focus more strongly on competition, challenges, and showcasing 
+cybersecurity skills. We also organize Hack The Box meetups, where 
+members collaborate, solve challenges, and learn from one another in a 
+practical environment. Alongside our technical activities, we host 
+internal recreational activities that strengthen team spirit and foster 
+connections within the community. Finally, each department has the 
+opportunity to organize specialized workshops and activities related to 
+its own field, allowing members to develop a broader range of technical, 
+creative, organizational, and professional skills.
+internal
+Events
+Workshops
+External
+Events
+Meetups
+[images on page: 1]
+
+===== PAGE 11 =====
+04
+Our Events &
+Projects
+[images on page: 1]
+
+===== PAGE 12 =====
+Club Events
+Hack.INI is a well known event held by Shellmates club for many years  which offers a 
+great opportunity to get initiated into the cybersecurity field and  learn from experts.(
+It stands for Hack Initiation, which  means that it is intended for  everyone interested in the cybersecurity  field in order to initiate them into the world of cybersecurity and  ethical hacking.(
+BSides is a global network of community-driven cybersecurity conferences that 
+aims to promote collaboration among information security  professionals, 
+researchers, and enthusiasts. Being organized by  Shellmates club, BSides Algiers 
+has been taking place since the first  online qualification phase in December 2020. 
+The event consisted of a series of conferences featuring a range of talks and 
+workshops alongside an advanced CTF competition.
+ one of the first events where new members get to know cyber security 
+fundamentals and discover the 5 main categories (web exploitation , 
+reverse engineering , binaary exploitation (pwn) , digital forensics 
+,cryptography )
+[images on page: 6]
+
+===== PAGE 13 =====
+Club Projects
+ShellPath
+An internal project where a team of mentors gather 
+to make cyber security content for the club and 
+tackle subjects beyond ctf categories for example 
+last year we featured active directory , malware 
+development , web exploitation , blue teaming
+Cybersecurity-Attacks
+Is an internal project where we 
+make teams and collaborate to 
+recreate famous cybersecurity 
+attacks in isolated controlled 
+enviromment to showcase in 
+stands and events
+[images on page: 1]
+
+===== PAGE 14 =====
+05
+What Will You
+Gain?
+[images on page: 1]
+
+===== PAGE 15 =====
+Club Benefits
+Learn
+Build your cybersecurity foundation
+Practice
+Turn knowledge into hands-on skills
+Compete
+Challenge yourself through CTFs & competitions
+Create
+Build projects and contribute to the club
+Connect
+Meet students, professionals & 
+communities
+Grow
+Develop technical, creative & professional skills
+[images on page: 1]
+
+===== PAGE 16 =====
+06 Conclusion
+[images on page: 1]
+
+===== PAGE 17 =====
+Conclusion
+Shellmates is more than a cybersecurity club. It is a 
+community built around learning, experimentation, 
+competition, and collaboration.
+From discovering the fundamentals of cybersecurity 
+to exploring advanced fields, participating in 
+challenges, building projects, organizing events, and 
+working alongside others, every member has the 
+opportunity to learn, contribute, and grow.
+Whether your goal is to deepen your technical skills, 
+explore a new field, develop professional 
+experience, or simply meet people who share the 
+same passion, there is a place for you at Shellmates.
+Learn. Build. Compete. Connect.
+Welcome to Shellmates.
+[images on page: 3]

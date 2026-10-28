@@ -1,0 +1,882 @@
+export type ProjectGroup = 'Projects' | 'Events' | 'Skills' | 'Practice' | 'Club'
+
+export type ProjectVisualId = 'path' | 'attack' | 'brief' | 'checklist'
+
+export type ProjectVisualRow = {
+  label: string
+  note?: string
+  value?: string
+}
+
+export interface ProjectVisual {
+  id: ProjectVisualId
+  /** The file or track named in the fragment's title bar. */
+  file: string
+  /** A short status shown at the right of the bar. */
+  status: string
+  /** The command line at the top of the fragment. */
+  command: string
+  rows: ProjectVisualRow[]
+  foot: string
+}
+
+export interface Project {
+  slug: string
+  name: string
+  tagline: string
+  summary: string
+  description: string[]
+  group: ProjectGroup
+  /** The record's type, as it appears in the archive. */
+  category: string
+  format: string
+  audience: string
+  /** Subject areas or working methods — not a software stack. */
+  topics: string[]
+  highlights: string[]
+  /** Who runs the record, in the club's own terms. */
+  team: string
+  visual: ProjectVisual
+  links: Array<{ label: string; href: string }>
+}
+
+export const recordGroups: Array<'All' | ProjectGroup> = [
+  'All',
+  'Projects',
+  'Events',
+  'Skills',
+  'Practice',
+  'Club',
+]
+
+export const groupOrder: ProjectGroup[] = ['Projects', 'Events', 'Skills', 'Practice', 'Club']
+
+export const groupMeta: Record<ProjectGroup, { title: string; note: string }> = {
+  Projects: {
+    title: 'Internal projects',
+    note: 'Work built and kept inside the club, by mentors and member teams.',
+  },
+  Events: {
+    title: 'Flagship events',
+    note: 'The three events the club is known for, from initiation to conference.',
+  },
+  Skills: {
+    title: 'Technical tracks',
+    note: 'Workshops and study tracks, from fundamentals to advanced subjects.',
+  },
+  Practice: {
+    title: 'Practice and competition',
+    note: 'Formats for solving, sparring and working as a team.',
+  },
+  Club: {
+    title: 'Club programme',
+    note: 'The internal rhythms that hold the community together.',
+  },
+}
+
+/**
+ * The 22 records supplied from the Shellmates club presentation, pages 10–13.
+ * The deck publishes no dates for individual sessions and no repository or
+ * demo links, so neither is invented here.
+ */
+export const projects: Project[] = [
+  {
+    slug: 'shellpath',
+    name: 'ShellPath',
+    tagline: 'A mentor-built path through cybersecurity, beyond the CTF categories.',
+    summary:
+      'An internal project where a team of mentors writes cybersecurity content for the club and takes on subjects that sit outside the usual CTF tracks.',
+    description: [
+      'ShellPath is an internal Shellmates project. A team of mentors gathers to produce cybersecurity material for the club, written for members rather than for a competition scoreboard.',
+      'The content reaches past the five CTF categories. Last year the path covered active directory, malware development, web exploitation and blue teaming.',
+      'It is a knowledge project: the output is material a member can work through, produced by the mentors who make up the team.',
+    ],
+    group: 'Projects',
+    category: 'Internal project',
+    format: 'Mentor-led',
+    audience: 'Internal',
+    topics: ['Active Directory', 'Malware development', 'Web exploitation', 'Blue teaming'],
+    highlights: [
+      'Mentor-written content for club members',
+      'Subjects beyond the standard CTF categories',
+      'Last year covered active directory, malware development, web exploitation and blue teaming',
+    ],
+    team: 'A team of Shellmates mentors',
+    visual: {
+      id: 'path',
+      file: 'shellpath / mentor track',
+      status: '04 modules',
+      command: '$ cat path/last-season',
+      rows: [
+        { label: 'Active Directory', note: 'identity & access' },
+        { label: 'Malware development', note: 'how it is built' },
+        { label: 'Web exploitation', note: 'the request layer' },
+        { label: 'Blue teaming', note: 'protecting systems' },
+      ],
+      foot: 'mentor-led · beyond the CTF categories',
+    },
+    links: [],
+  },
+  {
+    slug: 'cyber-attacks',
+    name: 'Cybersecurity-Attacks',
+    tagline: 'Famous attacks, rebuilt in an isolated lab and shown at events.',
+    summary:
+      'An internal project where teams recreate well-known cybersecurity attacks in controlled environments, then demonstrate them at stands and club events.',
+    description: [
+      'Cybersecurity-Attacks is an internal Shellmates project built around reconstruction. Members form teams and collaborate to recreate famous cybersecurity attacks inside isolated, controlled environments.',
+      'The reconstructions are not run against live systems. They exist so an attack can be explained clearly, from the first step to the last, in an isolated environment.',
+      'The finished work is demonstrated at stands and events, where the club can show what its teams have built.',
+    ],
+    group: 'Projects',
+    category: 'Internal project',
+    format: 'Team-based',
+    audience: 'Internal',
+    topics: ['Attack recreation', 'Isolated environments', 'Stands & events'],
+    highlights: [
+      'Member teams recreate well-known attacks',
+      'Everything runs in isolated, controlled environments',
+      'Used as demonstrations at stands and events',
+    ],
+    team: 'Member teams, working in collaboration',
+    visual: {
+      id: 'attack',
+      file: 'attacks / isolated-lab',
+      status: 'contained',
+      command: '$ run lab/attack-chain',
+      rows: [
+        { label: 'recon', note: 'scope the target' },
+        { label: 'initial access', note: 'find the way in' },
+        { label: 'execution', note: 'run the payload' },
+        { label: 'exfiltration', note: 'take the data' },
+      ],
+      foot: 'no live systems · demonstration only',
+    },
+    links: [],
+  },
+  {
+    slug: 'hack-ini',
+    name: 'Hack.INI',
+    tagline: 'An introduction to cybersecurity and ethical hacking, with experts in the room.',
+    summary:
+      'A cybersecurity initiation event for beginners, built around learning from experts and taking the first step into ethical hacking.',
+    description: [
+      'Hack.INI — Hack Initiation — is the club’s entry point into cybersecurity. It is designed for people who are starting out, with the fundamentals and the culture of ethical hacking introduced together.',
+      'The event brings beginners and experts into the same room, so the first step is not taken alone. It has been held for many years and remains open to anyone interested in the field.',
+    ],
+    group: 'Events',
+    category: 'Flagship event',
+    format: 'Open event',
+    audience: 'Open to all',
+    topics: ['Cybersecurity fundamentals', 'Ethical hacking', 'Beginner entry'],
+    highlights: [
+      'Introduces beginners to cybersecurity',
+      'Covers ethical hacking',
+      'Opportunities to learn from experts',
+    ],
+    team: 'Shellmates organisers and expert speakers',
+    visual: {
+      id: 'brief',
+      file: 'events / hack-ini',
+      status: 'open',
+      command: '$ open events/hack-ini',
+      rows: [
+        { label: 'introduction', note: 'the first step', value: 'beginner' },
+        { label: 'ethical hacking', note: 'the practice', value: 'core' },
+        { label: 'expert sessions', note: 'learn from the room', value: 'guided' },
+        { label: 'open entry', note: 'no prior experience', value: 'all' },
+      ],
+      foot: 'held for many years · open to everyone interested',
+    },
+    links: [],
+  },
+  {
+    slug: 'bsides-algiers',
+    name: 'BSides Algiers',
+    tagline: 'A community security conference with talks, workshops and an advanced CTF.',
+    summary:
+      'Part of the global BSides network: a Shellmates-organised conference with expert talks, workshops and an advanced Capture The Flag competition.',
+    description: [
+      'BSides Algiers is the club’s conference. It follows the BSides model of community-driven security events and is organised by Shellmates in Algiers.',
+      'The programme combines expert talks, hands-on workshops and an advanced CTF, bringing the wider security community into the same room.',
+      'The club’s presentation records the first online qualification phase in December 2020. The conference has been part of the club’s calendar since then.',
+    ],
+    group: 'Events',
+    category: 'Flagship event',
+    format: 'Conference',
+    audience: 'Open to all',
+    topics: ['Conference talks', 'Workshops', 'Advanced CTF', 'Community'],
+    highlights: [
+      'Expert talks',
+      'Hands-on workshops',
+      'An advanced CTF competition',
+    ],
+    team: 'Shellmates organisers, speakers and guests',
+    visual: {
+      id: 'brief',
+      file: 'events / bsides-algiers',
+      status: 'community',
+      command: '$ open events/bsides-algiers',
+      rows: [
+        { label: 'expert talks', note: 'the main track', value: 'talks' },
+        { label: 'workshops', note: 'hands-on sessions', value: 'practice' },
+        { label: 'advanced CTF', note: 'the competition', value: 'ctf' },
+        { label: 'community', note: 'the wider room', value: 'open' },
+      ],
+      foot: 'talks · workshops · advanced CTF',
+    },
+    links: [],
+  },
+  {
+    slug: 'cybersec-bootcamp',
+    name: 'CyberSec Bootcamp',
+    tagline: 'Five CTF categories, one introduction to the field.',
+    summary:
+      'An introductory bootcamp where new members meet cybersecurity fundamentals and the five main CTF categories.',
+    description: [
+      'CyberSec Bootcamp is one of the first events where new members meet the fundamentals of cybersecurity. It is built as a broad introduction rather than a deep dive into a single subject.',
+      'The programme walks through the five main categories: web exploitation, reverse engineering, binary exploitation (pwn), digital forensics and cryptography. It gives a new member the map before the season’s specialised workshops begin.',
+    ],
+    group: 'Events',
+    category: 'Flagship event',
+    format: 'Bootcamp',
+    audience: 'New members',
+    topics: [
+      'Web exploitation',
+      'Reverse engineering',
+      'Binary exploitation',
+      'Digital forensics',
+      'Cryptography',
+    ],
+    highlights: [
+      'Fundamentals for new members',
+      'The five main CTF categories',
+      'A map of the season ahead',
+    ],
+    team: 'Shellmates mentors and workshop leads',
+    visual: {
+      id: 'checklist',
+      file: 'bootcamp / categories',
+      status: '05 checks',
+      command: '$ check bootcamp/categories',
+      rows: [
+        { label: 'Web exploitation', note: 'the request layer', value: 'web' },
+        { label: 'Reverse engineering', note: 'inside the binary', value: 'rev' },
+        { label: 'Binary exploitation', note: 'pwn', value: 'pwn' },
+        { label: 'Digital forensics', note: 'evidence and traces', value: 'forensics' },
+        { label: 'Cryptography', note: 'securing information', value: 'crypto' },
+      ],
+      foot: 'five categories · fundamentals first',
+    },
+    links: [],
+  },
+  {
+    slug: 'web-pentesting',
+    name: 'Web Pentesting',
+    tagline: 'The web application as an attack surface, studied hands-on.',
+    summary:
+      'Workshops on web application penetration testing and the vulnerabilities that web security depends on.',
+    description: [
+      'The web pentesting track looks at web applications the way a penetration tester does. Sessions combine the concepts behind web security with practical work against the vulnerabilities that appear in web applications.',
+      'It is a workshop track for members, run through the season as part of the club’s specialised programme.',
+    ],
+    group: 'Skills',
+    category: 'Technical track',
+    format: 'Workshop',
+    audience: 'Members',
+    topics: ['Web applications', 'Penetration testing', 'Web security', 'Vulnerabilities'],
+    highlights: [
+      'Web application penetration testing',
+      'Hands-on workshops',
+      'Web security vulnerabilities',
+    ],
+    team: 'Shellmates mentors',
+    visual: {
+      id: 'path',
+      file: 'track / web-pentesting',
+      status: 'workshop',
+      command: '$ cat track/web-pentesting',
+      rows: [
+        { label: 'The web application', note: 'the surface' },
+        { label: 'Penetration testing', note: 'the method' },
+        { label: 'Vulnerabilities', note: 'what to look for' },
+        { label: 'Web security', note: 'the defence' },
+      ],
+      foot: 'members · workshop track',
+    },
+    links: [],
+  },
+  {
+    slug: 'cryptography',
+    name: 'Cryptography',
+    tagline: 'The concepts and practice of keeping information secure.',
+    summary:
+      'Technical workshops on cryptographic concepts and the challenges of securing and analysing information.',
+    description: [
+      'Cryptography sessions introduce the concepts behind secure communication and the practical work of analysing information. The track is technical, with challenges used to test understanding.',
+      'It sits among the five main CTF categories and feeds directly into the club’s competition work.',
+    ],
+    group: 'Skills',
+    category: 'Technical track',
+    format: 'Workshop',
+    audience: 'Members',
+    topics: ['Cryptographic concepts', 'Information security', 'Analysis', 'Challenges'],
+    highlights: [
+      'Technical workshops',
+      'Securing and analysing information',
+      'Challenge-based practice',
+    ],
+    team: 'Shellmates mentors',
+    visual: {
+      id: 'path',
+      file: 'track / cryptography',
+      status: 'workshop',
+      command: '$ cat track/cryptography',
+      rows: [
+        { label: 'Concepts', note: 'how secrecy works' },
+        { label: 'Secure information', note: 'what is protected' },
+        { label: 'Analysis', note: 'reading the evidence' },
+        { label: 'Challenges', note: 'testing understanding' },
+      ],
+      foot: 'members · one of the five CTF categories',
+    },
+    links: [],
+  },
+  {
+    slug: 'pwn-binary-exploitation',
+    name: 'Pwn / Binary Exploitation',
+    tagline: 'How software breaks at the binary level, and how to test it.',
+    summary:
+      'Practical sessions on binary exploitation and the techniques used to understand and test software security.',
+    description: [
+      'The pwn track works close to the machine. Sessions explore binary exploitation and the techniques used to understand how software behaves when it is pushed beyond its intended limits.',
+      'It is practical by design: the aim is to understand and test software security, not only to read about it.',
+    ],
+    group: 'Skills',
+    category: 'Technical track',
+    format: 'Workshop',
+    audience: 'Members',
+    topics: ['Binary exploitation', 'Software security', 'Practical testing'],
+    highlights: [
+      'Binary exploitation',
+      'Practical sessions',
+      'Understanding software security',
+    ],
+    team: 'Shellmates mentors',
+    visual: {
+      id: 'path',
+      file: 'track / pwn',
+      status: 'workshop',
+      command: '$ cat track/pwn',
+      rows: [
+        { label: 'The binary', note: 'where it starts' },
+        { label: 'Exploitation', note: 'how it breaks' },
+        { label: 'Testing', note: 'proving the behaviour' },
+      ],
+      foot: 'members · practical by design',
+    },
+    links: [],
+  },
+  {
+    slug: 'reverse-engineering',
+    name: 'Reverse Engineering',
+    tagline: 'Taking software apart to see how it works.',
+    summary:
+      'Workshops that introduce members to analysing software and understanding its internal behaviour.',
+    description: [
+      'Reverse engineering sessions teach members to look inside software: to analyse a binary, follow its behaviour and understand what it is doing.',
+      'The track is one of the five main CTF categories and a regular part of the club’s workshop programme.',
+    ],
+    group: 'Skills',
+    category: 'Technical track',
+    format: 'Workshop',
+    audience: 'Members',
+    topics: ['Software analysis', 'Internal behaviour', 'Binary analysis'],
+    highlights: [
+      'Analysing software',
+      'Understanding internal behaviour',
+      'Workshop format',
+    ],
+    team: 'Shellmates mentors',
+    visual: {
+      id: 'path',
+      file: 'track / reverse-engineering',
+      status: 'workshop',
+      command: '$ cat track/reverse-engineering',
+      rows: [
+        { label: 'Open the binary', note: 'the first look' },
+        { label: 'Follow behaviour', note: 'what it does' },
+        { label: 'Explain the logic', note: 'why it does it' },
+      ],
+      foot: 'members · one of the five CTF categories',
+    },
+    links: [],
+  },
+  {
+    slug: 'digital-forensics',
+    name: 'Digital Forensics',
+    tagline: 'Reading the traces digital evidence leaves behind.',
+    summary:
+      'Activities focused on examining digital evidence and discovering information through forensic analysis.',
+    description: [
+      'Digital forensics sessions are built around evidence. Members examine digital material, follow the traces it contains and practise the analysis that turns those traces into a finding.',
+      'It is one of the five main CTF categories, taught through activities that ask members to investigate rather than memorise.',
+    ],
+    group: 'Skills',
+    category: 'Technical track',
+    format: 'Workshop',
+    audience: 'Members',
+    topics: ['Digital evidence', 'Forensic analysis', 'Investigation'],
+    highlights: [
+      'Examining digital evidence',
+      'Forensic analysis',
+      'Investigation-led activities',
+    ],
+    team: 'Shellmates mentors',
+    visual: {
+      id: 'path',
+      file: 'track / digital-forensics',
+      status: 'workshop',
+      command: '$ cat track/digital-forensics',
+      rows: [
+        { label: 'Collect', note: 'the evidence' },
+        { label: 'Examine', note: 'the traces' },
+        { label: 'Analyse', note: 'the finding' },
+      ],
+      foot: 'members · one of the five CTF categories',
+    },
+    links: [],
+  },
+  {
+    slug: 'active-directory',
+    name: 'Active Directory',
+    tagline: 'Identity, access and the directory that holds an organisation together.',
+    summary:
+      'Advanced learning content on Active Directory, produced as part of ShellPath.',
+    description: [
+      'Active Directory is one of the advanced subjects in ShellPath, the club’s mentor-written content path. It covers identity and access in the directory environment that many organisations depend on.',
+      'The track exists because the club’s programme reaches beyond the five CTF categories. It is material a member can work through, written by mentors.',
+    ],
+    group: 'Skills',
+    category: 'Advanced track',
+    format: 'Advanced track',
+    audience: 'Members',
+    topics: ['Active Directory', 'Identity & access', 'Directory services'],
+    highlights: [
+      'Advanced ShellPath content',
+      'Active Directory',
+      'Written by mentors',
+    ],
+    team: 'ShellPath mentors',
+    visual: {
+      id: 'path',
+      file: 'shellpath / active-directory',
+      status: 'advanced',
+      command: '$ cat path/active-directory',
+      rows: [
+        { label: 'Identity', note: 'who is asking' },
+        { label: 'Access', note: 'what they may reach' },
+        { label: 'The directory', note: 'where it is held' },
+      ],
+      foot: 'advanced · ShellPath content',
+    },
+    links: [],
+  },
+  {
+    slug: 'malware-development',
+    name: 'Malware Development',
+    tagline: 'How malicious software is built, studied from the inside.',
+    summary:
+      'Advanced educational content exploring malware development as a cybersecurity topic, as featured in ShellPath.',
+    description: [
+      'Malware development is an advanced ShellPath subject. It looks at how malicious software is constructed, so that its behaviour can be understood rather than treated as a black box.',
+      'The content is study material for members, written as part of the club’s mentor-led path.',
+    ],
+    group: 'Skills',
+    category: 'Advanced track',
+    format: 'Advanced track',
+    audience: 'Members',
+    topics: ['Malware development', 'How attacks are built', 'Defensive understanding'],
+    highlights: [
+      'Advanced ShellPath content',
+      'Malware development',
+      'Explained from the inside',
+    ],
+    team: 'ShellPath mentors',
+    visual: {
+      id: 'path',
+      file: 'shellpath / malware',
+      status: 'advanced',
+      command: '$ cat path/malware-development',
+      rows: [
+        { label: 'The build', note: 'how it is made' },
+        { label: 'The behaviour', note: 'what it does' },
+        { label: 'The defence', note: 'what to watch for' },
+      ],
+      foot: 'advanced · ShellPath content',
+    },
+    links: [],
+  },
+  {
+    slug: 'blue-teaming',
+    name: 'Blue Teaming',
+    tagline: 'The defensive side: protecting systems and understanding attacks.',
+    summary:
+      'Training content on defensive cybersecurity concepts and approaches to protecting systems.',
+    description: [
+      'Blue teaming is the defensive counterpart to the club’s offensive tracks. The content covers the concepts behind protecting systems and the approaches a defensive team uses.',
+      'It is part of ShellPath’s advanced material and appears alongside web exploitation, Active Directory and malware development.',
+    ],
+    group: 'Skills',
+    category: 'Advanced track',
+    format: 'Advanced track',
+    audience: 'Members',
+    topics: ['Defensive security', 'Protecting systems', 'Blue team practice'],
+    highlights: [
+      'Defensive cybersecurity',
+      'Protecting systems',
+      'Advanced ShellPath content',
+    ],
+    team: 'ShellPath mentors',
+    visual: {
+      id: 'path',
+      file: 'shellpath / blue-team',
+      status: 'advanced',
+      command: '$ cat path/blue-teaming',
+      rows: [
+        { label: 'Know the attack', note: 'the offensive view' },
+        { label: 'Protect the system', note: 'the defensive view' },
+        { label: 'Keep it running', note: 'the operational view' },
+      ],
+      foot: 'advanced · ShellPath content',
+    },
+    links: [],
+  },
+  {
+    slug: 'hack-the-box-meetups',
+    name: 'Hack The Box Meetups',
+    tagline: 'A shared table for challenges, methods and questions.',
+    summary:
+      'Collaborative sessions where members solve cybersecurity challenges, share knowledge and practise their technical skills.',
+    description: [
+      'Hack The Box meetups are collaborative sessions built around solving challenges together. Members work through problems, compare approaches and explain what they find to one another.',
+      'The format is practical and social at once: it is where individual study meets the club’s shared knowledge.',
+    ],
+    group: 'Practice',
+    category: 'Practice format',
+    format: 'Meetup',
+    audience: 'Members',
+    topics: ['Challenge solving', 'Knowledge sharing', 'Technical practice'],
+    highlights: [
+      'Collaborative sessions',
+      'Cybersecurity challenges',
+      'Knowledge sharing',
+    ],
+    team: 'Members, learning together',
+    visual: {
+      id: 'brief',
+      file: 'practice / htb-meetups',
+      status: 'collaborative',
+      command: '$ open practice/htb-meetups',
+      rows: [
+        { label: 'Pick a challenge', note: 'choose the problem', value: 'start' },
+        { label: 'Work it together', note: 'compare approaches', value: 'team' },
+        { label: 'Share the method', note: 'explain the finding', value: 'share' },
+        { label: 'Practise again', note: 'build the skill', value: 'repeat' },
+      ],
+      foot: 'members · practical and social',
+    },
+    links: [],
+  },
+  {
+    slug: 'internal-events',
+    name: 'Internal Events',
+    tagline: 'The club’s own room: challenges, teams and practice.',
+    summary:
+      'Activities exclusively for members, with practical challenges and team-based exercises that apply what has been learned.',
+    description: [
+      'Internal events are reserved for club members. They are the place where the season’s workshops turn into practice, through challenges and exercises worked in teams.',
+      'The emphasis is on applying knowledge rather than listening to another talk.',
+    ],
+    group: 'Club',
+    category: 'Club programme',
+    format: 'Members only',
+    audience: 'Members only',
+    topics: ['Practical challenges', 'Team exercises', 'Members only'],
+    highlights: [
+      'Members only',
+      'Practical challenges',
+      'Team-based exercises',
+    ],
+    team: 'Shellmates organisers',
+    visual: {
+      id: 'brief',
+      file: 'club / internal-events',
+      status: 'members',
+      command: '$ open club/internal-events',
+      rows: [
+        { label: 'Practical challenges', note: 'use what was learned', value: 'apply' },
+        { label: 'Team exercises', note: 'work it together', value: 'team' },
+        { label: 'Members only', note: 'the club’s own room', value: 'closed' },
+      ],
+      foot: 'members · apply what was learned',
+    },
+    links: [],
+  },
+  {
+    slug: 'external-events',
+    name: 'External Events',
+    tagline: 'The club’s work, shown to a wider audience.',
+    summary:
+      'Events open to a wider audience, focused on cybersecurity competitions, challenges and demonstrations of technical skills.',
+    description: [
+      'External events take the club beyond its membership. They are open to a wider audience and built around competition, challenges and showing what members can do.',
+      'They are also where the club meets people who are curious about cybersecurity but have not yet found a way in.',
+    ],
+    group: 'Club',
+    category: 'Club programme',
+    format: 'Open event',
+    audience: 'Open to all',
+    topics: ['Open audience', 'Competitions', 'Demonstrations'],
+    highlights: [
+      'Open to a wider audience',
+      'Competitions and challenges',
+      'Technical demonstrations',
+    ],
+    team: 'Shellmates organisers',
+    visual: {
+      id: 'brief',
+      file: 'club / external-events',
+      status: 'open',
+      command: '$ open club/external-events',
+      rows: [
+        { label: 'A wider audience', note: 'beyond the membership', value: 'open' },
+        { label: 'Competitions', note: 'test the skill', value: 'compete' },
+        { label: 'Demonstrations', note: 'show the work', value: 'show' },
+      ],
+      foot: 'open audience · competition and showcase',
+    },
+    links: [],
+  },
+  {
+    slug: 'cybersecurity-workshops',
+    name: 'Cybersecurity Workshops',
+    tagline: 'Fundamentals first, then a specialised skill.',
+    summary:
+      'Hands-on learning sessions that introduce cybersecurity fundamentals and develop specialised technical skills.',
+    description: [
+      'Cybersecurity workshops are the club’s general workshop format: hands-on sessions that start with fundamentals and move into specialised technical skills.',
+      'The format is used for both introductory and specialised sessions, alongside the named tracks in web pentesting, cryptography, pwn, reverse engineering and digital forensics.',
+    ],
+    group: 'Skills',
+    category: 'Technical track',
+    format: 'Workshop',
+    audience: 'Members',
+    topics: ['Fundamentals', 'Specialised skills', 'Hands-on learning'],
+    highlights: [
+      'Hands-on sessions',
+      'Fundamentals and specialisations',
+      'Technical skills',
+    ],
+    team: 'Shellmates mentors',
+    visual: {
+      id: 'path',
+      file: 'track / workshops',
+      status: 'workshop',
+      command: '$ cat track/workshops',
+      rows: [
+        { label: 'Fundamentals', note: 'where the season starts' },
+        { label: 'Specialised skills', note: 'where it goes' },
+        { label: 'Hands-on practice', note: 'how it is learned' },
+      ],
+      foot: 'members · introductory and specialised',
+    },
+    links: [],
+  },
+  {
+    slug: 'ctf-competitions',
+    name: 'CTF Competitions',
+    tagline: 'Problems solved under time pressure, with a scoreboard.',
+    summary:
+      'Capture The Flag challenges that ask participants to solve cybersecurity problems and apply their knowledge competitively.',
+    description: [
+      'CTF competitions turn the season’s material into a contest. Participants work through challenges across the main categories, applying what they know under time pressure.',
+      'The format rewards both breadth and depth: a team can choose where to spend its effort, and every solved challenge adds to the score.',
+    ],
+    group: 'Practice',
+    category: 'Practice format',
+    format: 'Competitive',
+    audience: 'Participants',
+    topics: ['Capture The Flag', 'Competition', 'Problem solving'],
+    highlights: [
+      'CTF challenges',
+      'Competitive format',
+      'Applied cybersecurity knowledge',
+    ],
+    team: 'The club’s CTF organisers',
+    visual: {
+      id: 'checklist',
+      file: 'practice / ctf',
+      status: '05 categories',
+      command: '$ check practice/ctf',
+      rows: [
+        { label: 'Web exploitation', note: 'category', value: 'web' },
+        { label: 'Cryptography', note: 'category', value: 'crypto' },
+        { label: 'Binary exploitation', note: 'category', value: 'pwn' },
+        { label: 'Reverse engineering', note: 'category', value: 'rev' },
+        { label: 'Digital forensics', note: 'category', value: 'forensics' },
+      ],
+      foot: 'solve · score · learn from the board',
+    },
+    links: [],
+  },
+  {
+    slug: 'internal-recreational-activities',
+    name: 'Internal Recreational Activities',
+    tagline: 'The part of the club that is not a workshop.',
+    summary:
+      'Social activities that strengthen team spirit, encourage friendships and build connections within the club.',
+    description: [
+      'Internal recreational activities are the club’s social side. They are deliberately not technical: the aim is team spirit, friendship and the connections that make a long season work.',
+      'They are for members, and they are part of how Shellmates functions as a community, not only as a programme.',
+    ],
+    group: 'Club',
+    category: 'Club programme',
+    format: 'Social',
+    audience: 'Members only',
+    topics: ['Team spirit', 'Friendship', 'Community'],
+    highlights: [
+      'Social activities',
+      'Stronger team spirit',
+      'Connections within the club',
+    ],
+    team: 'Shellmates members',
+    visual: {
+      id: 'brief',
+      file: 'club / recreation',
+      status: 'members',
+      command: '$ open club/recreation',
+      rows: [
+        { label: 'Team spirit', note: 'build the group', value: 'social' },
+        { label: 'Friendships', note: 'make the connection', value: 'social' },
+        { label: 'The club', note: 'not only a schedule', value: 'community' },
+      ],
+      foot: 'members · the social side of the club',
+    },
+    links: [],
+  },
+  {
+    slug: 'department-specific-workshops',
+    name: 'Department-Specific Workshops',
+    tagline: 'Eight departments, each teaching its own craft.',
+    summary:
+      'Specialised activities organised by individual departments, developing technical, creative, organisational and professional skills.',
+    description: [
+      'Each Shellmates department can organise workshops and activities in its own field. The result is a programme that is wider than cybersecurity alone.',
+      'Sessions cover technical, creative, organisational and professional skills, and give members a way into the work behind the club.',
+    ],
+    group: 'Club',
+    category: 'Club programme',
+    format: 'Workshop',
+    audience: 'Members',
+    topics: ['Technical skills', 'Creative skills', 'Organisation', 'Professional practice'],
+    highlights: [
+      'Organised by departments',
+      'Four kinds of skill',
+      'Members develop beyond security',
+    ],
+    team: 'The club’s departments',
+    visual: {
+      id: 'brief',
+      file: 'club / departments',
+      status: '08 departments',
+      command: '$ open club/departments',
+      rows: [
+        { label: 'Technical', note: 'the security work', value: 'dept' },
+        { label: 'Creative', note: 'design and communication', value: 'dept' },
+        { label: 'Organisational', note: 'events and logistics', value: 'dept' },
+        { label: 'Professional', note: 'the work behind the club', value: 'dept' },
+      ],
+      foot: 'members · organised by the eight departments',
+    },
+    links: [],
+  },
+  {
+    slug: 'cybersecurity-demonstrations',
+    name: 'Cybersecurity Demonstrations',
+    tagline: 'A simulated attack, explained from first step to last.',
+    summary:
+      'Practical demonstrations of cybersecurity concepts and simulated attacks at club stands and events.',
+    description: [
+      'Cybersecurity demonstrations show rather than tell. Members present a concept or a simulated attack at a stand or event, walking the audience through what is happening.',
+      'The setting is controlled and the point is explanation: the demonstration exists to make an abstract technique legible.',
+    ],
+    group: 'Club',
+    category: 'Club programme',
+    format: 'Demonstration',
+    audience: 'Open to all',
+    topics: ['Simulated attacks', 'Stands & events', 'Explanation'],
+    highlights: [
+      'Practical demonstrations',
+      'Simulated attacks',
+      'At stands and events',
+    ],
+    team: 'Member demonstrators',
+    visual: {
+      id: 'attack',
+      file: 'club / demonstrations',
+      status: 'controlled',
+      command: '$ run stand/demo',
+      rows: [
+        { label: 'The concept', note: 'what is being shown' },
+        { label: 'The setup', note: 'an isolated environment' },
+        { label: 'The attack', note: 'simulated, step by step' },
+        { label: 'The explanation', note: 'what it means' },
+      ],
+      foot: 'controlled setting · demonstration only',
+    },
+    links: [],
+  },
+  {
+    slug: 'team-based-challenges',
+    name: 'Team-Based Challenges',
+    tagline: 'One problem, several minds, a shared result.',
+    summary:
+      'Collaborative exercises that encourage members to solve problems together, share knowledge and develop practical skills.',
+    description: [
+      'Team-based challenges are built around collaboration. Members work in groups on a problem, compare approaches and combine what they know to reach a result.',
+      'The format develops practical skills and the habit of explaining work to other people, which is as much a part of the club as the technical content.',
+    ],
+    group: 'Practice',
+    category: 'Practice format',
+    format: 'Collaborative',
+    audience: 'Teams',
+    topics: ['Collaboration', 'Problem solving', 'Knowledge sharing'],
+    highlights: [
+      'Team-based exercises',
+      'Shared knowledge',
+      'Practical skills',
+    ],
+    team: 'Member teams',
+    visual: {
+      id: 'checklist',
+      file: 'practice / team-challenges',
+      status: 'teams',
+      command: '$ check practice/team-challenges',
+      rows: [
+        { label: 'Form the team', note: 'bring the skills together', value: 'team' },
+        { label: 'Read the problem', note: 'agree on the target', value: 'scope' },
+        { label: 'Split the work', note: 'use every strength', value: 'plan' },
+        { label: 'Share the result', note: 'explain what worked', value: 'share' },
+      ],
+      foot: 'teams · solve together, explain together',
+    },
+    links: [],
+  },
+]
+
+export const projectBySlug = (slug: string): Project | undefined =>
+  projects.find((project) => project.slug === slug)
+
+export const countByGroup = (group: ProjectGroup): number =>
+  projects.filter((project) => project.group === group).length

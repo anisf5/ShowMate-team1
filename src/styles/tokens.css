@@ -1,0 +1,45 @@
+:root {
+  color-scheme: dark;
+
+  /* Ground and surfaces */
+  --bg: #050706;
+  --bg-2: #0b100d;
+  --tile: #090e0b;
+  --tile-2: #0f1512;
+  --tile-3: #151d18;
+
+  /* Ink — three steps: running text, secondary labels, quiet notes */
+  --ink: #f4f7f4;
+  --ink-body: #d8dfd9;
+  --ink-2: #929b94;
+  --ink-3: #808b82;
+
+  /* Accent */
+  --green: #39ff14;
+  --green-2: #00c853;
+  --green-deep: #0d3a12;
+  --on-green: #04120a;
+
+  /* Lines are used on controls only, never as decorative dividers */
+  --line: rgba(57, 255, 20, 0.22);
+  --line-soft: rgba(244, 247, 244, 0.1);
+
+  /* Frame */
+  --pad: clamp(20px, 2.4vw, 34px);
+  --gap: 8px;
+  --section-space: clamp(72px, 8.4vw, 124px);
+
+  /* Type — seven sizes on the page:
+     small / body / lead / title / statement / heading / display */
+  --font-sans: 'Archivo Variable', 'Archivo', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-mono: 'JetBrains Mono Variable', 'JetBrains Mono', ui-monospace, 'Cascadia Mono', monospace;
+  --fs-display: clamp(56px, min(10.4vw, 16.5vh), 150px);
+  --fs-heading: clamp(32px, 4.6vw, 64px);
+  --fs-statement: 32px;
+  --fs-title: 20px;
+  --fs-lead: 20px;
+  --fs-body: 16px;
+  --fs-meta: 13px;
+
+  --ease: cubic-bezier(0.16, 1, 0.3, 1);
+}

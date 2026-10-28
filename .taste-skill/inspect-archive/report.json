@@ -1,0 +1,3066 @@
+{
+ "url": "http://localhost:4173",
+ "at": "2026-10-28T15:41:16.749Z",
+ "allow": [
+  "mono"
+ ],
+ "viewports": [
+  {
+   "width": 1440,
+   "height": 900,
+   "load": "load",
+   "screens": 10,
+   "filled": [
+    0.83,
+    0.75,
+    0.77,
+    0.83,
+    0.77,
+    0.81,
+    0.78,
+    1,
+    0.47,
+    0.36
+   ],
+   "motion": {
+    "elements": 16,
+    "css": 2,
+    "transitions": 14,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "page": {
+     "height": 8567,
+     "screens": 9.5,
+     "words": 1397,
+     "img": 5,
+     "video": 0,
+     "canvas": 0,
+     "svg": 38,
+     "sections": 11,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 2,
+     "uiAbuse": false,
+     "realPictures": 5,
+     "videoCount": 0,
+     "uiPictures": 2,
+     "pictureSamples": [
+      "servers-in-a-rack.jpg",
+      "green-circuit-board-ii-2389301870.jpg",
+      "dec-vt100-terminal.jpg",
+      "efta00002522-cluttered-server-rack-filled-with-c",
+      "network-switches.jpg"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "SHOW MATE",
+     "words": 2,
+     "chars": 9,
+     "lines": 2,
+     "size": 148.5,
+     "vw": 10.3,
+     "font": "Archivo Variable",
+     "weight": 720,
+     "tracking": -0.055,
+     "leading": 0.8,
+     "upper": true,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "left",
+     "widthRatio": 0.52,
+     "top": 223,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "SHOW MATE",
+     "words": 2,
+     "lines": 2,
+     "size": 148.5,
+     "font": "Archivo Variable"
+    },
+    "headings": [
+     {
+      "text": "SHOW MATE",
+      "words": 2,
+      "chars": 9,
+      "lines": 2,
+      "size": 148.5,
+      "vw": 10.3,
+      "font": "Archivo Variable",
+      "weight": 720,
+      "tracking": -0.055,
+      "leading": 0.8,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.52,
+      "top": 223,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "Where there is a shell, there is a way.",
+      "words": 9,
+      "chars": 39,
+      "lines": 2,
+      "size": 32,
+      "vw": 2.2,
+      "font": "Archivo Variable",
+      "weight": 620,
+      "tracking": -0.035,
+      "leading": 1.02,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.28,
+      "top": 565,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "Explore Projects",
+      "words": 2,
+      "chars": 16,
+      "lines": 2,
+      "size": 32,
+      "vw": 2.2,
+      "font": "Archivo Variable",
+      "weight": 680,
+      "tracking": -0.04,
+      "leading": 0.98,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.28,
+      "top": 775,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "The club, in 22 records.",
+      "words": 5,
+      "chars": 24,
+      "lines": 1,
+      "size": 64,
+      "vw": 4.4,
+      "font": "Archivo Variable",
+      "weight": 620,
+      "tracking": -0.045,
+      "leading": 0.96,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.47,
+      "top": 1034,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "ShellPath",
+      "words": 1,
+      "chars": 9,
+      "lines": 1,
+      "size": 32,
+      "vw": 2.2,
+      "font": "Archivo Variable",
+      "weight": 620,
+      "tracking": -0.04,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.53,
+      "top": 1710,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Hack.INI",
+      "words": 1,
+      "chars": 8,
+      "lines": 1,
+      "size": 31.7,
+      "vw": 2.2,
+      "font": "Archivo Variable",
+      "weight": 620,
+      "tracking": -0.04,
+      "leading": 0.98,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.37,
+      "top": 2416,
+      "tag": "h4",
+      "kind": "heading"
+     },
+     {
+      "text": "BSides Algiers",
+      "words": 2,
+      "chars": 14,
+      "lines": 1,
+      "size": 31.7,
+      "vw": 2.2,
+      "font": "Archivo Variable",
+      "weight": 620,
+      "tracking": -0.04,
+      "leading": 0.98,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.29,
+      "top": 2416,
+      "tag": "h4",
+      "kind": "heading"
+     },
+     {
+      "text": "CyberSec Bootcamp",
+      "words": 2,
+      "chars": 17,
+      "lines": 1,
+      "size": 31.7,
+      "vw": 2.2,
+      "font": "Archivo Variable",
+      "weight": 620,
+      "tracking": -0.04,
+      "leading": 0.98,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.21,
+      "top": 2416,
+      "tag": "h4",
+      "kind": "heading"
+     },
+     {
+      "text": "Who Are We?",
+      "words": 3,
+      "chars": 11,
+      "lines": 1,
+      "size": 64,
+      "vw": 4.4,
+      "font": "Archivo Variable",
+      "weight": 620,
+      "tracking": -0.045,
+      "leading": 0.96,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.55,
+      "top": 4388,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "The Club in Figures.",
+      "words": 4,
+      "chars": 20,
+      "lines": 1,
+      "size": 64,
+      "vw": 4.4,
+      "font": "Archivo Variable",
+      "weight": 620,
+      "tracking": -0.045,
+      "leading": 0.96,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.55,
+      "top": 5310,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "2011",
+      "words": 1,
+      "chars": 4,
+      "lines": 1,
+      "size": 77.8,
+      "vw": 5.4,
+      "font": "Archivo Variable",
+      "weight": 700,
+      "tracking": -0.055,
+      "leading": 0.86,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "right",
+      "position": "right",
+      "widthRatio": 0.12,
+      "top": 5438,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "8",
+      "words": 1,
+      "chars": 1,
+      "lines": 1,
+      "size": 77.8,
+      "vw": 5.4,
+      "font": "Archivo Variable",
+      "weight": 700,
+      "tracking": -0.055,
+      "leading": 0.86,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "right",
+      "position": "right",
+      "widthRatio": 0.03,
+      "top": 5572,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "3",
+      "words": 1,
+      "chars": 1,
+      "lines": 1,
+      "size": 77.8,
+      "vw": 5.4,
+      "font": "Archivo Variable",
+      "weight": 700,
+      "tracking": -0.055,
+      "leading": 0.86,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "right",
+      "position": "right",
+      "widthRatio": 0.03,
+      "top": 5726,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "5",
+      "words": 1,
+      "chars": 1,
+      "lines": 1,
+      "size": 77.8,
+      "vw": 5.4,
+      "font": "Archivo Variable",
+      "weight": 700,
+      "tracking": -0.055,
+      "leading": 0.86,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "right",
+      "position": "right",
+      "widthRatio": 0.03,
+      "top": 5861,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "One Club. Eight Departments.",
+      "words": 4,
+      "chars": 28,
+      "lines": 2,
+      "size": 64,
+      "vw": 4.4,
+      "font": "Archivo Variable",
+      "weight": 620,
+      "tracking": -0.045,
+      "leading": 0.96,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.55,
+      "top": 6235,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "HR",
+      "words": 1,
+      "chars": 2,
+      "lines": 1,
+      "size": 27.4,
+      "vw": 1.9,
+      "font": "Archivo Variable",
+      "weight": 680,
+      "tracking": -0.045,
+      "leading": 0.94,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.21,
+      "top": 6617,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "Design",
+      "words": 1,
+      "chars": 6,
+      "lines": 1,
+      "size": 27.4,
+      "vw": 1.9,
+      "font": "Archivo Variable",
+      "weight": 680,
+      "tracking": -0.045,
+      "leading": 0.94,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.21,
+      "top": 6617,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "Relex",
+      "words": 1,
+      "chars": 5,
+      "lines": 1,
+      "size": 27.4,
+      "vw": 1.9,
+      "font": "Archivo Variable",
+      "weight": 680,
+      "tracking": -0.045,
+      "leading": 0.94,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.21,
+      "top": 6617,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "Technical",
+      "words": 1,
+      "chars": 9,
+      "lines": 1,
+      "size": 27.4,
+      "vw": 1.9,
+      "font": "Archivo Variable",
+      "weight": 680,
+      "tracking": -0.045,
+      "leading": 0.94,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.21,
+      "top": 6617,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "Events",
+      "words": 1,
+      "chars": 6,
+      "lines": 1,
+      "size": 27.4,
+      "vw": 1.9,
+      "font": "Archivo Variable",
+      "weight": 680,
+      "tracking": -0.045,
+      "leading": 0.94,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.21,
+      "top": 6976,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "Communication",
+      "words": 1,
+      "chars": 13,
+      "lines": 1,
+      "size": 27.4,
+      "vw": 1.9,
+      "font": "Archivo Variable",
+      "weight": 680,
+      "tracking": -0.045,
+      "leading": 0.94,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.21,
+      "top": 6976,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "Development",
+      "words": 1,
+      "chars": 11,
+      "lines": 1,
+      "size": 27.4,
+      "vw": 1.9,
+      "font": "Archivo Variable",
+      "weight": 680,
+      "tracking": -0.045,
+      "leading": 0.94,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.21,
+      "top": 6976,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "Multimedia",
+      "words": 1,
+      "chars": 10,
+      "lines": 1,
+      "size": 27.4,
+      "vw": 1.9,
+      "font": "Archivo Variable",
+      "weight": 680,
+      "tracking": -0.045,
+      "leading": 0.94,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.21,
+      "top": 6976,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "Come Build the Next Record.",
+      "words": 5,
+      "chars": 27,
+      "lines": 2,
+      "size": 64,
+      "vw": 4.4,
+      "font": "Archivo Variable",
+      "weight": 680,
+      "tracking": -0.05,
+      "leading": 0.94,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.53,
+      "top": 7401,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "SHOWMATE",
+      "words": 1,
+      "chars": 8,
+      "lines": 1,
+      "size": 148.5,
+      "vw": 10.3,
+      "font": "Archivo Variable",
+      "weight": 720,
+      "tracking": -0.055,
+      "leading": 0.76,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.58,
+      "top": 7891,
+      "tag": "p",
+      "kind": "statement"
+     }
+    ],
+    "headingSummary": {
+     "count": 25,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 10,
+     "centered": 0,
+     "medianWords": 1,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Archivo Variable",
+       "share": 0.76,
+       "mono": false
+      },
+      {
+       "family": "JetBrains Mono Variable",
+       "share": 0.24,
+       "mono": true
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      12,
+      13,
+      16,
+      20,
+      27,
+      32,
+      64,
+      78,
+      149
+     ],
+     "sizeCount": 9,
+     "notLoaded": [],
+     "body": {
+      "font": "Archivo Variable",
+      "size": 16,
+      "leading": 1.5,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 14.1
+     },
+     "measureChars": 71,
+     "max": {
+      "size": 148.5,
+      "vw": 10.3,
+      "font": "Archivo Variable",
+      "text": "SHOW"
+     },
+     "monoShare": 0.24,
+     "monoProseShare": 0.23,
+     "monoFamilies": [
+      "JetBrains Mono Variable"
+     ],
+     "monoSamples": [
+      "Shellmates // ESI Algiers",
+      "Scroll the archive",
+      "Server rack, green cabling",
+      "Shellmates // ESI Algiers",
+      "Circuit traces, backlit",
+      "22"
+     ],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0,
+     "centerShare": 0.01,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#050706",
+     "bodyBgHsl": {
+      "h": 150,
+      "s": 0.17,
+      "l": 0.02
+     },
+     "dark": true,
+     "sectionBgs": [
+      {
+       "color": "#090e0b",
+       "top": 1196,
+       "hsl": {
+        "h": 144,
+        "s": 0.22,
+        "l": 0.05
+       }
+      },
+      {
+       "color": "#030504",
+       "top": 1196,
+       "hsl": {
+        "h": 150,
+        "s": 0.25,
+        "l": 0.02
+       }
+      },
+      {
+       "color": "#0b100d",
+       "top": 4254,
+       "hsl": {
+        "h": 144,
+        "s": 0.19,
+        "l": 0.05
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#929b94",
+       "share": 0.36
+      },
+      {
+       "color": "#808b82",
+       "share": 0.23
+      },
+      {
+       "color": "#d8dfd9",
+       "share": 0.19
+      },
+      {
+       "color": "#f4f7f4",
+       "share": 0.12
+      },
+      {
+       "color": "#04120a",
+       "share": 0.03
+      }
+     ],
+     "button": {
+      "bg": "#090e0b",
+      "hsl": {
+       "h": 144,
+       "s": 0.22,
+       "l": 0.05
+      },
+      "fg": "#929b94"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 16,
+     "inHero": 3,
+     "radius": 0,
+     "height": 45,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 3,
+     "upper": 0,
+     "heroLabels": [
+      "Skip to content",
+      "SHOWMATE",
+      "Explore Projects"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 0,
+     "boxRadius": 0,
+     "squareMedia": 5,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": [
+      {
+       "count": 4,
+       "iconTopped": false,
+       "rounded": false,
+       "top": 5420
+      },
+      {
+       "count": 8,
+       "iconTopped": false,
+       "rounded": false,
+       "top": 6406
+      }
+     ]
+    },
+    "heroMedia": [
+     {
+      "type": "svg",
+      "ratio": 0.36
+     },
+     {
+      "type": "img",
+      "ratio": 0.2
+     },
+     {
+      "type": "svg",
+      "ratio": 0.19
+     },
+     {
+      "type": "img",
+      "ratio": 0.11
+     }
+    ],
+    "nav": {
+     "links": 7,
+     "fixed": true,
+     "height": 74,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "archivo variable",
+     "jetbrains mono variable"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "pageH": 8567,
+    "margins": {
+     "left": 34,
+     "right": 34
+    },
+    "sections": [
+     {
+      "sel": "section#home.hero",
+      "tag": "section",
+      "top": 0,
+      "height": 900,
+      "words": 56,
+      "media": 4,
+      "middle": 0,
+      "heading": {
+       "text": "SHOW",
+       "size": 149,
+       "tag": "h1"
+      },
+      "left": 34,
+      "right": 34,
+      "textLeft": 44,
+      "textRight": 263,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#projects.section.projects",
+      "tag": "section",
+      "top": 900,
+      "height": 3354,
+      "words": 704,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "The club, in 22 records.",
+       "size": 64,
+       "tag": "h2"
+      },
+      "left": 34,
+      "right": 34,
+      "textLeft": 34,
+      "textRight": 34,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#about.section.section--tone",
+      "tag": "section",
+      "top": 4254,
+      "height": 923,
+      "words": 178,
+      "media": 0,
+      "middle": 123,
+      "heading": {
+       "text": "Who Are We?",
+       "size": 64,
+       "tag": "h2"
+      },
+      "left": 34,
+      "right": 48,
+      "textLeft": 34,
+      "textRight": 48,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": true
+     },
+     {
+      "sel": "section#stats.section",
+      "tag": "section",
+      "top": 5176,
+      "height": 937,
+      "words": 94,
+      "media": 1,
+      "middle": 28,
+      "heading": {
+       "text": "2011",
+       "size": 78,
+       "tag": "span"
+      },
+      "left": 34,
+      "right": 54,
+      "textLeft": 34,
+      "textRight": 54,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#structure.section.section--tone",
+      "tag": "section",
+      "top": 6114,
+      "height": 1124,
+      "words": 231,
+      "media": 0,
+      "middle": 45,
+      "heading": {
+       "text": "One Club. Eight Departments.",
+       "size": 64,
+       "tag": "h2"
+      },
+      "left": 34,
+      "right": 60,
+      "textLeft": 34,
+      "textRight": 60,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#connect.section",
+      "tag": "section",
+      "top": 7237,
+      "height": 654,
+      "words": 54,
+      "media": 1,
+      "middle": 51,
+      "heading": {
+       "text": "Come Build the Next Record.",
+       "size": 64,
+       "tag": "h2"
+      },
+      "left": 77,
+      "right": 34,
+      "textLeft": 77,
+      "textRight": 537,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer.footer",
+      "tag": "footer",
+      "top": 7891,
+      "height": 676,
+      "words": 162,
+      "media": 0,
+      "middle": 122,
+      "heading": {
+       "text": "Explore",
+       "size": 16,
+       "tag": "h2"
+      },
+      "left": 34,
+      "right": 34,
+      "textLeft": 34,
+      "textRight": 34,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "SHOW MATE",
+      "size": 149,
+      "top": 223,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 34,
+      "n": 12
+     },
+     {
+      "x": 50,
+      "n": 5
+     },
+     {
+      "x": 954,
+      "n": 3
+     },
+     {
+      "x": 77,
+      "n": 2
+     },
+     {
+      "x": 855,
+      "n": 2
+     },
+     {
+      "x": 522,
+      "n": 1
+     },
+     {
+      "x": 629,
+      "n": 1
+     },
+     {
+      "x": 839,
+      "n": 1
+     },
+     {
+      "x": 1089,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 28,
+    "bodySize": 16,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0.07,
+    "voidBox": {
+     "x": 1140,
+     "y": 600,
+     "w": 300,
+     "h": 300
+    }
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 768,
+   "height": 1024,
+   "load": "load",
+   "screens": 12,
+   "filled": [
+    0.88,
+    0.74,
+    0.84,
+    0.91,
+    0.83,
+    0.82,
+    1,
+    0.66,
+    0.92,
+    0.92,
+    0.32,
+    0.45
+   ],
+   "motion": {
+    "elements": 8,
+    "css": 1,
+    "transitions": 7,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "page": {
+     "height": 11614,
+     "screens": 11.3,
+     "words": 1385,
+     "img": 5,
+     "video": 0,
+     "canvas": 0,
+     "svg": 38,
+     "sections": 11,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 2,
+     "uiAbuse": false,
+     "realPictures": 5,
+     "videoCount": 0,
+     "uiPictures": 2,
+     "pictureSamples": [
+      "servers-in-a-rack.jpg",
+      "green-circuit-board-ii-2389301870.jpg",
+      "dec-vt100-terminal.jpg",
+      "efta00002522-cluttered-server-rack-filled-with-c",
+      "network-switches.jpg"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "SHOW MATE",
+     "words": 2,
+     "chars": 9,
+     "lines": 2,
+     "size": 79.9,
+     "vw": 10.4,
+     "font": "Archivo Variable",
+     "weight": 720,
+     "tracking": -0.055,
+     "leading": 0.8,
+     "upper": true,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "left",
+     "widthRatio": 0.51,
+     "top": 426,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "SHOW MATE",
+     "words": 2,
+     "lines": 2,
+     "size": 79.9,
+     "font": "Archivo Variable"
+    },
+    "headings": [
+     {
+      "text": "SHOW MATE",
+      "words": 2,
+      "chars": 9,
+      "lines": 2,
+      "size": 79.9,
+      "vw": 10.4,
+      "font": "Archivo Variable",
+      "weight": 720,
+      "tracking": -0.055,
+      "leading": 0.8,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.51,
+      "top": 426,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "Where there is a shell, there is a way.",
+      "words": 9,
+      "chars": 39,
+      "lines": 3,
+      "size": 32,
+      "vw": 4.2,
+      "font": "Archivo Variable",
+      "weight": 620,
+      "tracking": -0.035,
+      "leading": 1.02,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.34,
+      "top": 635,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "Explore Projects",
+      "words": 2,
+      "chars": 16,
+      "lines": 2,
+      "size": 32,
+      "vw": 4.2,
+      "font": "Archivo Variable",
+      "weight": 680,
+      "tracking": -0.04,
+      "leading": 0.98,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.26,
+      "top": 923,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "The club, in 22 records.",
+      "words": 5,
+      "chars": 24,
+      "lines": 1,
+      "size": 35.3,
+      "vw": 4.6,
+      "font": "Archivo Variable",
+      "weight": 620,
+      "tracking": -0.045,
+      "leading": 0.96,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.95,
+      "top": 1096,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "ShellPath",
+      "words": 1,
+      "chars": 9,
+      "lines": 1,
+      "size": 32,
+      "vw": 4.2,
+      "font": "Archivo Variable",
+      "weight": 620,
+      "tracking": -0.04,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.91,
+      "top": 1739,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Who Are We?",
+      "words": 3,
+      "chars": 11,
+      "lines": 1,
+      "size": 35.3,
+      "vw": 4.6,
+      "font": "Archivo Variable",
+      "weight": 620,
+      "tracking": -0.045,
+      "leading": 0.96,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.95,
+      "top": 6013,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "The Club in Figures.",
+      "words": 4,
+      "chars": 20,
+      "lines": 1,
+      "size": 35.3,
+      "vw": 4.6,
+      "font": "Archivo Variable",
+      "weight": 620,
+      "tracking": -0.045,
+      "leading": 0.96,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.95,
+      "top": 7383,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "2011",
+      "words": 1,
+      "chars": 4,
+      "lines": 1,
+      "size": 44,
+      "vw": 5.7,
+      "font": "Archivo Variable",
+      "weight": 700,
+      "tracking": -0.055,
+      "leading": 0.86,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "right",
+      "position": "right",
+      "widthRatio": 0.12,
+      "top": 8006,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "8",
+      "words": 1,
+      "chars": 1,
+      "lines": 1,
+      "size": 44,
+      "vw": 5.7,
+      "font": "Archivo Variable",
+      "weight": 700,
+      "tracking": -0.055,
+      "leading": 0.86,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "right",
+      "position": "right",
+      "widthRatio": 0.03,
+      "top": 8109,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "3",
+      "words": 1,
+      "chars": 1,
+      "lines": 1,
+      "size": 44,
+      "vw": 5.7,
+      "font": "Archivo Variable",
+      "weight": 700,
+      "tracking": -0.055,
+      "leading": 0.86,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "right",
+      "position": "right",
+      "widthRatio": 0.03,
+      "top": 8231,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "5",
+      "words": 1,
+      "chars": 1,
+      "lines": 1,
+      "size": 44,
+      "vw": 5.7,
+      "font": "Archivo Variable",
+      "weight": 700,
+      "tracking": -0.055,
+      "leading": 0.86,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "right",
+      "position": "right",
+      "widthRatio": 0.03,
+      "top": 8333,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "One Club. Eight Departments.",
+      "words": 4,
+      "chars": 28,
+      "lines": 1,
+      "size": 35.3,
+      "vw": 4.6,
+      "font": "Archivo Variable",
+      "weight": 620,
+      "tracking": -0.045,
+      "leading": 0.96,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.95,
+      "top": 8579,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Come Build the Next Record.",
+      "words": 5,
+      "chars": 27,
+      "lines": 2,
+      "size": 35.3,
+      "vw": 4.6,
+      "font": "Archivo Variable",
+      "weight": 680,
+      "tracking": -0.05,
+      "leading": 0.94,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.54,
+      "top": 10072,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "SHOWMATE",
+      "words": 1,
+      "chars": 8,
+      "lines": 1,
+      "size": 79.9,
+      "vw": 10.4,
+      "font": "Archivo Variable",
+      "weight": 720,
+      "tracking": -0.055,
+      "leading": 0.76,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.58,
+      "top": 10704,
+      "tag": "p",
+      "kind": "statement"
+     }
+    ],
+    "headingSummary": {
+     "count": 14,
+     "maxLines": 3,
+     "over2Lines": 0,
+     "statements": 2,
+     "centered": 0,
+     "medianWords": 2,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Archivo Variable",
+       "share": 0.76,
+       "mono": false
+      },
+      {
+       "family": "JetBrains Mono Variable",
+       "share": 0.24,
+       "mono": true
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      12,
+      13,
+      16,
+      20,
+      22,
+      32,
+      35,
+      44,
+      80
+     ],
+     "sizeCount": 9,
+     "notLoaded": [],
+     "body": {
+      "font": "Archivo Variable",
+      "size": 16,
+      "leading": 1.5,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 14.1
+     },
+     "measureChars": 71,
+     "max": {
+      "size": 79.9,
+      "vw": 10.4,
+      "font": "Archivo Variable",
+      "text": "SHOW"
+     },
+     "monoShare": 0.24,
+     "monoProseShare": 0.23,
+     "monoFamilies": [
+      "JetBrains Mono Variable"
+     ],
+     "monoSamples": [
+      "Shellmates // ESI Algiers",
+      "Server rack, green cabling",
+      "Shellmates // ESI Algiers",
+      "Circuit traces, backlit",
+      "22",
+      "2"
+     ],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0,
+     "centerShare": 0.01,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#050706",
+     "bodyBgHsl": {
+      "h": 150,
+      "s": 0.17,
+      "l": 0.02
+     },
+     "dark": true,
+     "sectionBgs": [
+      {
+       "color": "#090e0b",
+       "top": 1363,
+       "hsl": {
+        "h": 144,
+        "s": 0.22,
+        "l": 0.05
+       }
+      },
+      {
+       "color": "#030504",
+       "top": 1363,
+       "hsl": {
+        "h": 150,
+        "s": 0.25,
+        "l": 0.02
+       }
+      },
+      {
+       "color": "#0b100d",
+       "top": 5941,
+       "hsl": {
+        "h": 144,
+        "s": 0.19,
+        "l": 0.05
+       }
+      },
+      {
+       "color": "#39ff14",
+       "top": 10044,
+       "hsl": {
+        "h": 111,
+        "s": 1,
+        "l": 0.54
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#929b94",
+       "share": 0.36
+      },
+      {
+       "color": "#808b82",
+       "share": 0.23
+      },
+      {
+       "color": "#d8dfd9",
+       "share": 0.19
+      },
+      {
+       "color": "#f4f7f4",
+       "share": 0.12
+      },
+      {
+       "color": "#04120a",
+       "share": 0.03
+      }
+     ],
+     "button": {
+      "bg": "#090e0b",
+      "hsl": {
+       "h": 144,
+       "s": 0.22,
+       "l": 0.05
+      },
+      "fg": "#929b94"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 16,
+     "inHero": 3,
+     "radius": 0,
+     "height": 45,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 3,
+     "upper": 0,
+     "heroLabels": [
+      "Skip to content",
+      "SHOWMATE",
+      "Menu"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 0,
+     "boxRadius": 0,
+     "squareMedia": 4,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": [
+      {
+       "count": 8,
+       "iconTopped": false,
+       "rounded": false,
+       "top": 8762
+      }
+     ]
+    },
+    "heroMedia": [
+     {
+      "type": "svg",
+      "ratio": 0.37
+     },
+     {
+      "type": "img",
+      "ratio": 0.2
+     },
+     {
+      "type": "svg",
+      "ratio": 0.09
+     },
+     {
+      "type": "img",
+      "ratio": 0.09
+     }
+    ],
+    "nav": {
+     "links": 1,
+     "fixed": true,
+     "height": 74,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "archivo variable",
+     "jetbrains mono variable"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "pageH": 11614,
+    "margins": {
+     "left": 20,
+     "right": 20
+    },
+    "sections": [
+     {
+      "sel": "section#home.hero",
+      "tag": "section",
+      "top": 0,
+      "height": 1024,
+      "words": 53,
+      "media": 4,
+      "middle": 0,
+      "heading": {
+       "text": "SHOW",
+       "size": 80,
+       "tag": "h1"
+      },
+      "left": 20,
+      "right": 20,
+      "textLeft": 30,
+      "textRight": 44,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.projects-head",
+      "tag": "div",
+      "top": 1096,
+      "height": 134,
+      "words": 24,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 20,
+      "right": 348,
+      "textLeft": 20,
+      "textRight": 348,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.archive",
+      "tag": "div",
+      "top": 1363,
+      "height": 4506,
+      "words": 664,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "ShellPath",
+       "size": 32,
+       "tag": "h3"
+      },
+      "left": 20,
+      "right": 20,
+      "textLeft": 20,
+      "textRight": 32,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#about.section.section--tone",
+      "tag": "section",
+      "top": 5941,
+      "height": 1370,
+      "words": 178,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Who Are We?",
+       "size": 35,
+       "tag": "h2"
+      },
+      "left": 20,
+      "right": 20,
+      "textLeft": 20,
+      "textRight": 34,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#stats.section",
+      "tag": "section",
+      "top": 7311,
+      "height": 1196,
+      "words": 94,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "The Club in Figures.",
+       "size": 35,
+       "tag": "h2"
+      },
+      "left": 20,
+      "right": 20,
+      "textLeft": 20,
+      "textRight": 36,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#structure.section.section--tone",
+      "tag": "section",
+      "top": 8507,
+      "height": 1465,
+      "words": 231,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "One Club. Eight Departments.",
+       "size": 35,
+       "tag": "h2"
+      },
+      "left": 20,
+      "right": 45,
+      "textLeft": 20,
+      "textRight": 45,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#connect.section",
+      "tag": "section",
+      "top": 9972,
+      "height": 710,
+      "words": 54,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Come Build the Next Record.",
+       "size": 35,
+       "tag": "h2"
+      },
+      "left": 20,
+      "right": 20,
+      "textLeft": 42,
+      "textRight": 326,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer.footer",
+      "tag": "footer",
+      "top": 10683,
+      "height": 931,
+      "words": 164,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "SHOW",
+       "size": 80,
+       "tag": "p"
+      },
+      "left": 20,
+      "right": 20,
+      "textLeft": 20,
+      "textRight": 20,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "SHOW MATE",
+      "size": 80,
+      "top": 426,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 20,
+      "n": 16
+     },
+     {
+      "x": 36,
+      "n": 11
+     },
+     {
+      "x": 222,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 28,
+    "bodySize": 16,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 390,
+   "height": 844,
+   "load": "load",
+   "screens": 12,
+   "filled": [
+    0.9,
+    0.7,
+    1,
+    0.84,
+    0.87,
+    1,
+    0.75,
+    0.93,
+    1,
+    0.83,
+    0.85,
+    0.93
+   ],
+   "motion": {
+    "elements": 7,
+    "css": 1,
+    "transitions": 6,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "page": {
+     "height": 13946,
+     "screens": 16.5,
+     "words": 1385,
+     "img": 5,
+     "video": 0,
+     "canvas": 0,
+     "svg": 38,
+     "sections": 11,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 2,
+     "uiAbuse": false,
+     "realPictures": 4,
+     "videoCount": 0,
+     "uiPictures": 2,
+     "pictureSamples": [
+      "servers-in-a-rack.jpg",
+      "green-circuit-board-ii-2389301870.jpg",
+      "dec-vt100-terminal.jpg",
+      "efta00002522-cluttered-server-rack-filled-with-c"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "SHOW MATE",
+     "words": 2,
+     "chars": 9,
+     "lines": 2,
+     "size": 74.1,
+     "vw": 19,
+     "font": "Archivo Variable",
+     "weight": 720,
+     "tracking": -0.055,
+     "leading": 0.8,
+     "upper": true,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "center",
+     "widthRatio": 0.82,
+     "top": 264,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "SHOW MATE",
+     "words": 2,
+     "lines": 2,
+     "size": 74.1,
+     "font": "Archivo Variable"
+    },
+    "headings": [
+     {
+      "text": "SHOW MATE",
+      "words": 2,
+      "chars": 9,
+      "lines": 2,
+      "size": 74.1,
+      "vw": 19,
+      "font": "Archivo Variable",
+      "weight": 720,
+      "tracking": -0.055,
+      "leading": 0.8,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.82,
+      "top": 264,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "Explore Projects",
+      "words": 2,
+      "chars": 16,
+      "lines": 2,
+      "size": 32,
+      "vw": 8.2,
+      "font": "Archivo Variable",
+      "weight": 680,
+      "tracking": -0.04,
+      "leading": 0.98,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.78,
+      "top": 738,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "The club, in 22 records.",
+      "words": 5,
+      "chars": 24,
+      "lines": 1,
+      "size": 32,
+      "vw": 8.2,
+      "font": "Archivo Variable",
+      "weight": 620,
+      "tracking": -0.045,
+      "leading": 0.96,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 1190,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "ShellPath",
+      "words": 1,
+      "chars": 9,
+      "lines": 1,
+      "size": 32,
+      "vw": 8.2,
+      "font": "Archivo Variable",
+      "weight": 620,
+      "tracking": -0.04,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 1836,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Hack.INI",
+      "words": 1,
+      "chars": 8,
+      "lines": 1,
+      "size": 22,
+      "vw": 5.6,
+      "font": "Archivo Variable",
+      "weight": 620,
+      "tracking": -0.04,
+      "leading": 0.98,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 3177,
+      "tag": "h4",
+      "kind": "heading"
+     },
+     {
+      "text": "BSides Algiers",
+      "words": 2,
+      "chars": 14,
+      "lines": 1,
+      "size": 22,
+      "vw": 5.6,
+      "font": "Archivo Variable",
+      "weight": 620,
+      "tracking": -0.04,
+      "leading": 0.98,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 3359,
+      "tag": "h4",
+      "kind": "heading"
+     },
+     {
+      "text": "CyberSec Bootcamp",
+      "words": 2,
+      "chars": 17,
+      "lines": 1,
+      "size": 22,
+      "vw": 5.6,
+      "font": "Archivo Variable",
+      "weight": 620,
+      "tracking": -0.04,
+      "leading": 0.98,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 3564,
+      "tag": "h4",
+      "kind": "heading"
+     },
+     {
+      "text": "Who Are We?",
+      "words": 3,
+      "chars": 11,
+      "lines": 1,
+      "size": 32,
+      "vw": 8.2,
+      "font": "Archivo Variable",
+      "weight": 620,
+      "tracking": -0.045,
+      "leading": 0.96,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 6829,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "The Club in Figures.",
+      "words": 4,
+      "chars": 20,
+      "lines": 1,
+      "size": 32,
+      "vw": 8.2,
+      "font": "Archivo Variable",
+      "weight": 620,
+      "tracking": -0.045,
+      "leading": 0.96,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 8271,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "2011",
+      "words": 1,
+      "chars": 4,
+      "lines": 1,
+      "size": 44,
+      "vw": 11.3,
+      "font": "Archivo Variable",
+      "weight": 700,
+      "tracking": -0.055,
+      "leading": 0.86,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "right",
+      "position": "right",
+      "widthRatio": 0.25,
+      "top": 8891,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "8",
+      "words": 1,
+      "chars": 1,
+      "lines": 1,
+      "size": 44,
+      "vw": 11.3,
+      "font": "Archivo Variable",
+      "weight": 700,
+      "tracking": -0.055,
+      "leading": 0.86,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "right",
+      "position": "right",
+      "widthRatio": 0.06,
+      "top": 9013,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "3",
+      "words": 1,
+      "chars": 1,
+      "lines": 1,
+      "size": 44,
+      "vw": 11.3,
+      "font": "Archivo Variable",
+      "weight": 700,
+      "tracking": -0.055,
+      "leading": 0.86,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "right",
+      "position": "right",
+      "widthRatio": 0.06,
+      "top": 9155,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "5",
+      "words": 1,
+      "chars": 1,
+      "lines": 1,
+      "size": 44,
+      "vw": 11.3,
+      "font": "Archivo Variable",
+      "weight": 700,
+      "tracking": -0.055,
+      "leading": 0.86,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "right",
+      "position": "right",
+      "widthRatio": 0.06,
+      "top": 9277,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "One Club. Eight Departments.",
+      "words": 4,
+      "chars": 28,
+      "lines": 2,
+      "size": 32,
+      "vw": 8.2,
+      "font": "Archivo Variable",
+      "weight": 620,
+      "tracking": -0.045,
+      "leading": 0.96,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 9542,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "HR",
+      "words": 1,
+      "chars": 2,
+      "lines": 1,
+      "size": 32,
+      "vw": 8.2,
+      "font": "Archivo Variable",
+      "weight": 680,
+      "tracking": -0.045,
+      "leading": 0.94,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.82,
+      "top": 9881,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "Design",
+      "words": 1,
+      "chars": 6,
+      "lines": 1,
+      "size": 32,
+      "vw": 8.2,
+      "font": "Archivo Variable",
+      "weight": 680,
+      "tracking": -0.045,
+      "leading": 0.94,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.82,
+      "top": 10163,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "Relex",
+      "words": 1,
+      "chars": 5,
+      "lines": 1,
+      "size": 32,
+      "vw": 8.2,
+      "font": "Archivo Variable",
+      "weight": 680,
+      "tracking": -0.045,
+      "leading": 0.94,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.82,
+      "top": 10425,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "Technical",
+      "words": 1,
+      "chars": 9,
+      "lines": 1,
+      "size": 32,
+      "vw": 8.2,
+      "font": "Archivo Variable",
+      "weight": 680,
+      "tracking": -0.045,
+      "leading": 0.94,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.82,
+      "top": 10707,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "Events",
+      "words": 1,
+      "chars": 6,
+      "lines": 1,
+      "size": 32,
+      "vw": 8.2,
+      "font": "Archivo Variable",
+      "weight": 680,
+      "tracking": -0.045,
+      "leading": 0.94,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.82,
+      "top": 10988,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "Communication",
+      "words": 1,
+      "chars": 13,
+      "lines": 1,
+      "size": 32,
+      "vw": 8.2,
+      "font": "Archivo Variable",
+      "weight": 680,
+      "tracking": -0.045,
+      "leading": 0.94,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.82,
+      "top": 11270,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "Development",
+      "words": 1,
+      "chars": 11,
+      "lines": 1,
+      "size": 32,
+      "vw": 8.2,
+      "font": "Archivo Variable",
+      "weight": 680,
+      "tracking": -0.045,
+      "leading": 0.94,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.82,
+      "top": 11551,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "Multimedia",
+      "words": 1,
+      "chars": 10,
+      "lines": 1,
+      "size": 32,
+      "vw": 8.2,
+      "font": "Archivo Variable",
+      "weight": 680,
+      "tracking": -0.045,
+      "leading": 0.94,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.82,
+      "top": 11814,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "Come Build the Next Record.",
+      "words": 5,
+      "chars": 27,
+      "lines": 2,
+      "size": 32,
+      "vw": 8.2,
+      "font": "Archivo Variable",
+      "weight": 680,
+      "tracking": -0.05,
+      "leading": 0.94,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.78,
+      "top": 12130,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "SHOWMATE",
+      "words": 1,
+      "chars": 8,
+      "lines": 1,
+      "size": 56,
+      "vw": 14.4,
+      "font": "Archivo Variable",
+      "weight": 720,
+      "tracking": -0.055,
+      "leading": 0.76,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.81,
+      "top": 12844,
+      "tag": "p",
+      "kind": "statement"
+     }
+    ],
+    "headingSummary": {
+     "count": 24,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 9,
+     "centered": 0,
+     "medianWords": 1,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Archivo Variable",
+       "share": 0.76,
+       "mono": false
+      },
+      {
+       "family": "JetBrains Mono Variable",
+       "share": 0.24,
+       "mono": true
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      12,
+      13,
+      16,
+      20,
+      22,
+      32,
+      44,
+      56,
+      74
+     ],
+     "sizeCount": 9,
+     "notLoaded": [],
+     "body": {
+      "font": "Archivo Variable",
+      "size": 16,
+      "leading": 1.5,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 14.1
+     },
+     "measureChars": 44,
+     "max": {
+      "size": 74.1,
+      "vw": 19,
+      "font": "Archivo Variable",
+      "text": "SHOW"
+     },
+     "monoShare": 0.24,
+     "monoProseShare": 0.23,
+     "monoFamilies": [
+      "JetBrains Mono Variable"
+     ],
+     "monoSamples": [
+      "Shellmates // ESI Algiers",
+      "Server rack, green cabling",
+      "Shellmates // ESI Algiers",
+      "Circuit traces, backlit",
+      "22",
+      "2"
+     ],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0,
+     "centerShare": 0.01,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#050706",
+     "bodyBgHsl": {
+      "h": 150,
+      "s": 0.17,
+      "l": 0.02
+     },
+     "dark": true,
+     "sectionBgs": [
+      {
+       "color": "#090e0b",
+       "top": 74,
+       "hsl": {
+        "h": 144,
+        "s": 0.22,
+        "l": 0.05
+       }
+      },
+      {
+       "color": "#030504",
+       "top": 1528,
+       "hsl": {
+        "h": 150,
+        "s": 0.25,
+        "l": 0.02
+       }
+      },
+      {
+       "color": "#0b100d",
+       "top": 6757,
+       "hsl": {
+        "h": 144,
+        "s": 0.19,
+        "l": 0.05
+       }
+      },
+      {
+       "color": "#39ff14",
+       "top": 12102,
+       "hsl": {
+        "h": 111,
+        "s": 1,
+        "l": 0.54
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#929b94",
+       "share": 0.36
+      },
+      {
+       "color": "#808b82",
+       "share": 0.23
+      },
+      {
+       "color": "#d8dfd9",
+       "share": 0.19
+      },
+      {
+       "color": "#f4f7f4",
+       "share": 0.12
+      },
+      {
+       "color": "#04120a",
+       "share": 0.03
+      }
+     ],
+     "button": {
+      "bg": "#090e0b",
+      "hsl": {
+       "h": 144,
+       "s": 0.22,
+       "l": 0.05
+      },
+      "fg": "#929b94"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 16,
+     "inHero": 3,
+     "radius": 0,
+     "height": 45,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 3,
+     "upper": 0,
+     "heroLabels": [
+      "Skip to content",
+      "SHOWMATE",
+      "Menu"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 0,
+     "boxRadius": 0,
+     "squareMedia": 3,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": [
+      {
+       "count": 3,
+       "iconTopped": false,
+       "rounded": false,
+       "top": 74
+      },
+      {
+       "count": 4,
+       "iconTopped": false,
+       "rounded": false,
+       "top": 8875
+      },
+      {
+       "count": 8,
+       "iconTopped": false,
+       "rounded": false,
+       "top": 9752
+      }
+     ]
+    },
+    "heroMedia": [
+     {
+      "type": "svg",
+      "ratio": 0.54
+     }
+    ],
+    "nav": {
+     "links": 1,
+     "fixed": true,
+     "height": 74,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "archivo variable",
+     "jetbrains mono variable"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "pageH": 13946,
+    "margins": {
+     "left": 20,
+     "right": 20
+    },
+    "sections": [
+     {
+      "sel": "section#home.hero",
+      "tag": "section",
+      "top": 0,
+      "height": 1118,
+      "words": 53,
+      "media": 4,
+      "middle": 0,
+      "heading": {
+       "text": "SHOW",
+       "size": 74,
+       "tag": "h1"
+      },
+      "left": 20,
+      "right": 0,
+      "textLeft": 30,
+      "textRight": 47,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.projects-head",
+      "tag": "div",
+      "top": 1190,
+      "height": 156,
+      "words": 24,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 20,
+      "right": 21,
+      "textLeft": 20,
+      "textRight": 21,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.filters",
+      "tag": "div",
+      "top": 1380,
+      "height": 126,
+      "words": 11,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 20,
+      "right": 97,
+      "textLeft": 20,
+      "textRight": 126,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.archive",
+      "tag": "div",
+      "top": 1528,
+      "height": 5157,
+      "words": 664,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "ShellPath",
+       "size": 32,
+       "tag": "h3"
+      },
+      "left": 12,
+      "right": 12,
+      "textLeft": 12,
+      "textRight": 12,
+      "fullBleed": true,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.section-head",
+      "tag": "div",
+      "top": 6829,
+      "height": 131,
+      "words": 21,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 20,
+      "right": 43,
+      "textLeft": 20,
+      "textRight": 43,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.about-grid",
+      "tag": "div",
+      "top": 6992,
+      "height": 1135,
+      "words": 154,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 20,
+      "right": 11,
+      "textLeft": 20,
+      "textRight": 18,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#stats.section",
+      "tag": "section",
+      "top": 8199,
+      "height": 1271,
+      "words": 94,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "The Club in Figures.",
+       "size": 32,
+       "tag": "h2"
+      },
+      "left": 20,
+      "right": 20,
+      "textLeft": 20,
+      "textRight": 22,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.section-head",
+      "tag": "div",
+      "top": 9542,
+      "height": 162,
+      "words": 26,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 20,
+      "right": 23,
+      "textLeft": 20,
+      "textRight": 23,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "ul.structure-grid",
+      "tag": "ul",
+      "top": 9752,
+      "height": 2206,
+      "words": 201,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "HR",
+       "size": 32,
+       "tag": "p"
+      },
+      "left": 36,
+      "right": 40,
+      "textLeft": 36,
+      "textRight": 40,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#connect.section",
+      "tag": "section",
+      "top": 12030,
+      "height": 813,
+      "words": 54,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Come Build the Next Record.",
+       "size": 32,
+       "tag": "h2"
+      },
+      "left": 20,
+      "right": 20,
+      "textLeft": 42,
+      "textRight": 45,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer.footer",
+      "tag": "footer",
+      "top": 12844,
+      "height": 1102,
+      "words": 162,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Explore",
+       "size": 16,
+       "tag": "h2"
+      },
+      "left": 20,
+      "right": 24,
+      "textLeft": 20,
+      "textRight": 24,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "SHOW MATE",
+      "size": 74,
+      "top": 264,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 20,
+      "n": 23
+     },
+     {
+      "x": 36,
+      "n": 5
+     }
+    ],
+    "leftBlocks": 28,
+    "bodySize": 16,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  }
+ ],
+ "findings": [
+  {
+   "level": "WARN",
+   "id": "card-rows",
+   "width": 1440,
+   "message": "2 rows of identical boxed cards.",
+   "fix": "Vary the composition; not every section is a card grid.",
+   "alsoAt": [
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "no-footage",
+   "width": 1440,
+   "message": "No video anywhere on the page.",
+   "fix": "Look for one honest clip with scripts/assets.mjs --video (the place, the material, the process) and use it as a muted loop with a poster frame. Defend its absence only if no clip fits the subject."
+  }
+ ],
+ "images": [
+  {
+   "viewport": "desktop",
+   "width": 1440,
+   "fold": "C:\\Users\\Anis\\Desktop\\test\\.taste-skill\\inspect-archive\\desktop-fold.jpg",
+   "pages": [
+    "C:\\Users\\Anis\\Desktop\\test\\.taste-skill\\inspect-archive\\desktop-page-01.jpg",
+    "C:\\Users\\Anis\\Desktop\\test\\.taste-skill\\inspect-archive\\desktop-page-02.jpg",
+    "C:\\Users\\Anis\\Desktop\\test\\.taste-skill\\inspect-archive\\desktop-page-03.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "tablet",
+   "width": 768,
+   "fold": "C:\\Users\\Anis\\Desktop\\test\\.taste-skill\\inspect-archive\\tablet-fold.jpg",
+   "pages": [
+    "C:\\Users\\Anis\\Desktop\\test\\.taste-skill\\inspect-archive\\tablet-page-01.jpg",
+    "C:\\Users\\Anis\\Desktop\\test\\.taste-skill\\inspect-archive\\tablet-page-02.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "mobile",
+   "width": 390,
+   "fold": "C:\\Users\\Anis\\Desktop\\test\\.taste-skill\\inspect-archive\\mobile-fold.jpg",
+   "pages": [
+    "C:\\Users\\Anis\\Desktop\\test\\.taste-skill\\inspect-archive\\mobile-page-01.jpg",
+    "C:\\Users\\Anis\\Desktop\\test\\.taste-skill\\inspect-archive\\mobile-page-02.jpg"
+   ],
+   "film": []
+  }
+ ]
+}

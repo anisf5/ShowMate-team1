@@ -1,0 +1,1007 @@
+{
+ "url": "http://localhost:4173/projects/department-specific-workshops",
+ "at": "2026-10-28T15:41:57.896Z",
+ "allow": [
+  "mono"
+ ],
+ "viewports": [
+  {
+   "width": 1440,
+   "height": 900,
+   "load": "load",
+   "screens": 3,
+   "filled": [
+    0.6,
+    0.68,
+    0.4
+   ],
+   "motion": {
+    "elements": 8,
+    "css": 5,
+    "transitions": 3,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "page": {
+     "height": 2441,
+     "screens": 2.7,
+     "words": 349,
+     "img": 4,
+     "video": 0,
+     "canvas": 0,
+     "svg": 9,
+     "sections": 5,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 1,
+     "uiAbuse": false,
+     "realPictures": 4,
+     "videoCount": 0,
+     "uiPictures": 1,
+     "pictureSamples": [
+      "network-switches.jpg",
+      "macro-circuit-board.jpg",
+      "servers-in-a-rack.jpg",
+      "green-circuit-board-ii-2389301870.jpg"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Department-Specific Workshops",
+     "words": 2,
+     "chars": 29,
+     "lines": 2,
+     "size": 77.8,
+     "vw": 5.4,
+     "font": "Archivo Variable",
+     "weight": 700,
+     "tracking": -0.05,
+     "leading": 0.92,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "left",
+     "widthRatio": 0.55,
+     "top": 136,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Department-Specific Workshops",
+     "words": 2,
+     "lines": 2,
+     "size": 77.8,
+     "font": "Archivo Variable"
+    },
+    "headings": [
+     {
+      "text": "Department-Specific Workshops",
+      "words": 2,
+      "chars": 29,
+      "lines": 2,
+      "size": 77.8,
+      "vw": 5.4,
+      "font": "Archivo Variable",
+      "weight": 700,
+      "tracking": -0.05,
+      "leading": 0.92,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.55,
+      "top": 136,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "Cybersecurity Demonstrations",
+      "words": 2,
+      "chars": 28,
+      "lines": 1,
+      "size": 32,
+      "vw": 2.2,
+      "font": "Archivo Variable",
+      "weight": 620,
+      "tracking": -0.04,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.29,
+      "top": 1680,
+      "tag": "strong",
+      "kind": "heading"
+     },
+     {
+      "text": "SHOWMATE",
+      "words": 1,
+      "chars": 8,
+      "lines": 1,
+      "size": 148.5,
+      "vw": 10.3,
+      "font": "Archivo Variable",
+      "weight": 720,
+      "tracking": -0.055,
+      "leading": 0.76,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.58,
+      "top": 1764,
+      "tag": "p",
+      "kind": "statement"
+     }
+    ],
+    "headingSummary": {
+     "count": 3,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 1,
+     "centered": 0,
+     "medianWords": 2,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Archivo Variable",
+       "share": 0.6,
+       "mono": false
+      },
+      {
+       "family": "JetBrains Mono Variable",
+       "share": 0.4,
+       "mono": true
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      13,
+      16,
+      20,
+      32,
+      78,
+      149
+     ],
+     "sizeCount": 6,
+     "notLoaded": [],
+     "body": {
+      "font": "Archivo Variable",
+      "size": 16,
+      "leading": 1.6,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 7.1
+     },
+     "measureChars": 71,
+     "max": {
+      "size": 148.5,
+      "vw": 10.3,
+      "font": "Archivo Variable",
+      "text": "SHOW"
+     },
+     "monoShare": 0.4,
+     "monoProseShare": 0.39,
+     "monoFamilies": [
+      "JetBrains Mono Variable"
+     ],
+     "monoSamples": [
+      "All records",
+      "Club programme",
+      "Workshop",
+      "Members",
+      "club / departments",
+      "08 departments"
+     ],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0.01,
+     "centerShare": 0.01,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#050706",
+     "bodyBgHsl": {
+      "h": 150,
+      "s": 0.17,
+      "l": 0.02
+     },
+     "dark": true,
+     "sectionBgs": [],
+     "textColors": [
+      {
+       "color": "#929b94",
+       "share": 0.52
+      },
+      {
+       "color": "#d8dfd9",
+       "share": 0.18
+      },
+      {
+       "color": "#808b82",
+       "share": 0.17
+      },
+      {
+       "color": "#f4f7f4",
+       "share": 0.08
+      },
+      {
+       "color": "#00c853",
+       "share": 0.03
+      }
+     ],
+     "button": {
+      "bg": "#39ff14",
+      "hsl": {
+       "h": 111,
+       "s": 1,
+       "l": 0.54
+      },
+      "fg": "#04120a"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 3,
+     "inHero": 3,
+     "radius": 0,
+     "height": 58,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Skip to content",
+      "SHOWMATE",
+      "Explore Projects"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 0,
+     "boxRadius": 0,
+     "squareMedia": 4,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": [
+      {
+       "count": 3,
+       "iconTopped": false,
+       "rounded": false,
+       "top": 1261
+      }
+     ]
+    },
+    "heroMedia": [
+     {
+      "type": "img",
+      "ratio": 0.14
+     }
+    ],
+    "nav": {
+     "links": 7,
+     "fixed": true,
+     "height": 74,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "archivo variable",
+     "jetbrains mono variable"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "pageH": 2441,
+    "margins": {
+     "left": 34,
+     "right": 34
+    },
+    "sections": [
+     {
+      "sel": "div.detail-head",
+      "tag": "div",
+      "top": 82,
+      "height": 243,
+      "words": 15,
+      "media": 0,
+      "middle": 255,
+      "heading": {
+       "text": "Department-Specific Workshops",
+       "size": 78,
+       "tag": "h1"
+      },
+      "left": 34,
+      "right": 85,
+      "textLeft": 34,
+      "textRight": 85,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.detail-visual",
+      "tag": "div",
+      "top": 365,
+      "height": 410,
+      "words": 45,
+      "media": 1,
+      "middle": 304,
+      "heading": null,
+      "left": 50,
+      "right": 34,
+      "textLeft": 50,
+      "textRight": 156,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.detail-grid",
+      "tag": "div",
+      "top": 823,
+      "height": 382,
+      "words": 92,
+      "media": 0,
+      "middle": 338,
+      "heading": {
+       "text": "About this record",
+       "size": 13,
+       "tag": "h2"
+      },
+      "left": 34,
+      "right": 74,
+      "textLeft": 34,
+      "textRight": 74,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.detail-refs",
+      "tag": "section",
+      "top": 1261,
+      "height": 339,
+      "words": 18,
+      "media": 3,
+      "middle": 8,
+      "heading": null,
+      "left": 34,
+      "right": 34,
+      "textLeft": 44,
+      "textRight": 203,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer.footer",
+      "tag": "footer",
+      "top": 1764,
+      "height": 676,
+      "words": 162,
+      "media": 0,
+      "middle": 122,
+      "heading": {
+       "text": "Explore",
+       "size": 16,
+       "tag": "h2"
+      },
+      "left": 34,
+      "right": 34,
+      "textLeft": 34,
+      "textRight": 34,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Department-Specific Workshops",
+      "size": 78,
+      "top": 136,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 34,
+      "n": 3
+     }
+    ],
+    "leftBlocks": 3,
+    "bodySize": 16,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0.14,
+    "voidBox": {
+     "x": 420,
+     "y": 420,
+     "w": 420,
+     "h": 420
+    }
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 390,
+   "height": 844,
+   "load": "load",
+   "screens": 5,
+   "filled": [
+    0.66,
+    0.62,
+    0.76,
+    0.62,
+    0.51
+   ],
+   "motion": {
+    "elements": 6,
+    "css": 5,
+    "transitions": 1,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "page": {
+     "height": 4051,
+     "screens": 4.8,
+     "words": 340,
+     "img": 4,
+     "video": 0,
+     "canvas": 0,
+     "svg": 9,
+     "sections": 5,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 1,
+     "uiAbuse": false,
+     "realPictures": 4,
+     "videoCount": 0,
+     "uiPictures": 1,
+     "pictureSamples": [
+      "network-switches.jpg",
+      "macro-circuit-board.jpg",
+      "servers-in-a-rack.jpg",
+      "green-circuit-board-ii-2389301870.jpg"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Department-Specific Workshops",
+     "words": 2,
+     "chars": 29,
+     "lines": 2,
+     "size": 38,
+     "vw": 9.7,
+     "font": "Archivo Variable",
+     "weight": 700,
+     "tracking": -0.05,
+     "leading": 0.92,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "center",
+     "widthRatio": 0.9,
+     "top": 82,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Department-Specific Workshops",
+     "words": 2,
+     "lines": 2,
+     "size": 38,
+     "font": "Archivo Variable"
+    },
+    "headings": [
+     {
+      "text": "Department-Specific Workshops",
+      "words": 2,
+      "chars": 29,
+      "lines": 2,
+      "size": 38,
+      "vw": 9.7,
+      "font": "Archivo Variable",
+      "weight": 700,
+      "tracking": -0.05,
+      "leading": 0.92,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 82,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "Cybersecurity Demonstrations",
+      "words": 2,
+      "chars": 28,
+      "lines": 2,
+      "size": 32,
+      "vw": 8.2,
+      "font": "Archivo Variable",
+      "weight": 620,
+      "tracking": -0.04,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.68,
+      "top": 2836,
+      "tag": "strong",
+      "kind": "heading"
+     },
+     {
+      "text": "SHOWMATE",
+      "words": 1,
+      "chars": 8,
+      "lines": 1,
+      "size": 56,
+      "vw": 14.4,
+      "font": "Archivo Variable",
+      "weight": 720,
+      "tracking": -0.055,
+      "leading": 0.76,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.81,
+      "top": 2949,
+      "tag": "p",
+      "kind": "statement"
+     }
+    ],
+    "headingSummary": {
+     "count": 3,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 1,
+     "centered": 0,
+     "medianWords": 2,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Archivo Variable",
+       "share": 0.59,
+       "mono": false
+      },
+      {
+       "family": "JetBrains Mono Variable",
+       "share": 0.41,
+       "mono": true
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      13,
+      16,
+      20,
+      32,
+      38,
+      56
+     ],
+     "sizeCount": 6,
+     "notLoaded": [],
+     "body": {
+      "font": "Archivo Variable",
+      "size": 16,
+      "leading": 1.6,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 7.1
+     },
+     "measureChars": 44,
+     "max": {
+      "size": 56,
+      "vw": 14.4,
+      "font": "Archivo Variable",
+      "text": "SHOW"
+     },
+     "monoShare": 0.41,
+     "monoProseShare": 0.4,
+     "monoFamilies": [
+      "JetBrains Mono Variable"
+     ],
+     "monoSamples": [
+      "All records",
+      "Club programme",
+      "Workshop",
+      "Members",
+      "club / departments",
+      "08 departments"
+     ],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0.01,
+     "centerShare": 0,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#050706",
+     "bodyBgHsl": {
+      "h": 150,
+      "s": 0.17,
+      "l": 0.02
+     },
+     "dark": true,
+     "sectionBgs": [
+      {
+       "color": "#030504",
+       "top": 370,
+       "hsl": {
+        "h": 150,
+        "s": 0.25,
+        "l": 0.02
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#929b94",
+       "share": 0.51
+      },
+      {
+       "color": "#d8dfd9",
+       "share": 0.19
+      },
+      {
+       "color": "#808b82",
+       "share": 0.17
+      },
+      {
+       "color": "#f4f7f4",
+       "share": 0.08
+      },
+      {
+       "color": "#00c853",
+       "share": 0.03
+      }
+     ],
+     "button": {
+      "bg": "#0f1512",
+      "hsl": {
+       "h": 150,
+       "s": 0.17,
+       "l": 0.07
+      },
+      "fg": "#f4f7f4"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 3,
+     "inHero": 3,
+     "radius": 0,
+     "height": 58,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Skip to content",
+      "SHOWMATE",
+      "Menu"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 0,
+     "boxRadius": 0,
+     "squareMedia": 4,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": [
+      {
+       "count": 3,
+       "iconTopped": false,
+       "rounded": false,
+       "top": 1957
+      }
+     ]
+    },
+    "heroMedia": [
+     {
+      "type": "img",
+      "ratio": 0.11
+     }
+    ],
+    "nav": {
+     "links": 1,
+     "fixed": true,
+     "height": 74,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "archivo variable",
+     "jetbrains mono variable"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "pageH": 4051,
+    "margins": {
+     "left": 20,
+     "right": 20
+    },
+    "sections": [
+     {
+      "sel": "div.detail-head",
+      "tag": "div",
+      "top": 82,
+      "height": 248,
+      "words": 13,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 20,
+      "right": 57,
+      "textLeft": 20,
+      "textRight": 57,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.detail-visual",
+      "tag": "div",
+      "top": 370,
+      "height": 636,
+      "words": 45,
+      "media": 1,
+      "middle": 0,
+      "heading": null,
+      "left": 20,
+      "right": 20,
+      "textLeft": 30,
+      "textRight": 34,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.detail-grid",
+      "tag": "div",
+      "top": 1054,
+      "height": 847,
+      "words": 92,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "About this record",
+       "size": 13,
+       "tag": "h2"
+      },
+      "left": 20,
+      "right": 22,
+      "textLeft": 20,
+      "textRight": 22,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.detail-refs",
+      "tag": "section",
+      "top": 1957,
+      "height": 804,
+      "words": 18,
+      "media": 3,
+      "middle": 0,
+      "heading": null,
+      "left": 20,
+      "right": 20,
+      "textLeft": 30,
+      "textRight": 40,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "a.detail-next",
+      "tag": "a",
+      "top": 2816,
+      "height": 132,
+      "words": 7,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Cybersecurity Demonstrations",
+       "size": 32,
+       "tag": "strong"
+      },
+      "left": 40,
+      "right": 130,
+      "textLeft": 40,
+      "textRight": 130,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer.footer",
+      "tag": "footer",
+      "top": 2949,
+      "height": 1102,
+      "words": 162,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Explore",
+       "size": 16,
+       "tag": "h2"
+      },
+      "left": 20,
+      "right": 24,
+      "textLeft": 20,
+      "textRight": 24,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Department-Specific Workshops",
+      "size": 38,
+      "top": 82,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 20,
+      "n": 3
+     }
+    ],
+    "leftBlocks": 3,
+    "bodySize": 16,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  }
+ ],
+ "findings": [
+  {
+   "level": "WARN",
+   "id": "no-footage",
+   "width": 1440,
+   "message": "No video anywhere on the page.",
+   "fix": "Look for one honest clip with scripts/assets.mjs --video (the place, the material, the process) and use it as a muted loop with a poster frame. Defend its absence only if no clip fits the subject."
+  },
+  {
+   "level": "WARN",
+   "id": "still-page",
+   "width": 1440,
+   "message": "Little motion: 8 element(s) moved while the page loaded and scrolled.",
+   "fix": "Give every section an entrance for its parts (not one fade of the whole block) and add one moving picture: a looping clip or a slow move on a photograph."
+  }
+ ],
+ "images": [
+  {
+   "viewport": "desktop",
+   "width": 1440,
+   "fold": "C:\\Users\\Anis\\Desktop\\test\\.taste-skill\\inspect-detail\\desktop-fold.jpg",
+   "pages": [
+    "C:\\Users\\Anis\\Desktop\\test\\.taste-skill\\inspect-detail\\desktop-page-01.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "mobile",
+   "width": 390,
+   "fold": "C:\\Users\\Anis\\Desktop\\test\\.taste-skill\\inspect-detail\\mobile-fold.jpg",
+   "pages": [
+    "C:\\Users\\Anis\\Desktop\\test\\.taste-skill\\inspect-detail\\mobile-page-01.jpg"
+   ],
+   "film": []
+  }
+ ]
+}
