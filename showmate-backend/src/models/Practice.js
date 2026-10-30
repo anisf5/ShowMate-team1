@@ -1,0 +1,5 @@
+import mongoose from 'mongoose'
+import { visualSchema } from './visualSchema.js'
+const linkSchema = new mongoose.Schema({ label: String, href: String }, { _id: false })
+const schema = new mongoose.Schema({ slug: { type: String, required: true, unique: true, lowercase: true, trim: true }, name: { type: String, required: true, trim: true, maxlength: 160 }, tagline: { type: String, default: '' }, summary: { type: String, default: '' }, description: { type: [String], default: [] }, category: { type: String, default: 'Practice' }, format: { type: String, default: '' }, difficulty: { type: String, default: 'All levels' }, rules: { type: [String], default: [] }, topics: { type: [String], default: [] }, equipment: { type: [String], default: [] }, schedule: { type: String, default: '' }, team: { type: String, default: '' }, visual: { type: visualSchema, default: () => ({}) }, links: { type: [linkSchema], default: [] }, imageUrl: { type: String, default: '' }, status: { type: String, enum: ['draft','published'], default: 'published' } }, { timestamps: true })
+export default mongoose.model('Practice', schema)

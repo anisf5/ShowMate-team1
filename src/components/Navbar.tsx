@@ -141,6 +141,10 @@ export default function Navbar() {
               <kbd>ctrl K</kbd>
             </button>
 
+            <Link className="btn btn--dark nav-admin" to="/admin" aria-label="Admin login">
+              Admin
+            </Link>
+
             <Link className="btn nav-cta" to="/#projects">
               Explore Projects
               <ArrowUpRight size={18} aria-hidden="true" />
@@ -195,6 +199,9 @@ export default function Navbar() {
             <span>Search records</span>
             <Search size={18} aria-hidden="true" />
           </button>
+          <Link className="btn btn--dark btn--block" to="/admin" onClick={() => setMenuOpen(false)}>
+            Admin login
+          </Link>
           <Link className="btn btn--block" to="/#projects" onClick={() => setMenuOpen(false)}>
             Explore Projects
             <ArrowUpRight size={18} aria-hidden="true" />

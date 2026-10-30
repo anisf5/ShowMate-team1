@@ -1,0 +1,5 @@
+import mongoose from 'mongoose'
+import { visualSchema } from './visualSchema.js'
+const linkSchema = new mongoose.Schema({ label: String, href: String }, { _id: false })
+const schema = new mongoose.Schema({ slug: { type: String, required: true, unique: true, lowercase: true, trim: true }, name: { type: String, required: true, trim: true, maxlength: 160 }, tagline: { type: String, default: '' }, summary: { type: String, default: '' }, description: { type: [String], default: [] }, category: { type: String, default: 'Club programme' }, mission: { type: String, default: '' }, activities: { type: [String], default: [] }, membership: { type: String, default: '' }, audience: { type: String, default: 'Members' }, contact: { type: String, default: '' }, visual: { type: visualSchema, default: () => ({}) }, links: { type: [linkSchema], default: [] }, imageUrl: { type: String, default: '' }, status: { type: String, enum: ['draft','published'], default: 'published' } }, { timestamps: true })
+export default mongoose.model('ClubContent', schema)

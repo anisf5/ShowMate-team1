@@ -168,3 +168,43 @@ node "<path-to>/design-taste-frontend/scripts/inspect.mjs" http://localhost:4173
 The home page and the detail pages pass that gate with **0 FAIL**. Its remaining warnings are
 defended in the design notes: recorded video was not used because no honest Shellmates footage was
 supplied, and the ledger rows are the archive's table, not a card grid.
+
+
+## Administration et base de données
+
+Le site public garde sa présentation actuelle. Les fiches de l'archive (Projects, Events, Skills, Practice et Club) sont désormais modélisées dans MongoDB sous forme de `Record`, avec les mêmes champs que les objets de `src/data/projects.ts`. Le front public récupère les fiches depuis l'API quand elle est disponible et garde les données embarquées en secours.
+
+### Premier import des 22 fiches
+
+Depuis un terminal dans `showmate-backend` (après avoir configuré `.env` et créé le compte admin) :
+
+```powershell
+npm run seed-content
+```
+
+Le script importe les 22 fiches sans écraser celles qui existent déjà. Il peut être relancé sans dupliquer les enregistrements.
+
+### Lancer le projet
+
+Terminal 1, dossier `showmate-backend` :
+
+```powershell
+npm run dev
+```
+
+Terminal 2, racine du projet :
+
+```powershell
+npm run dev
+```
+
+- Site public : `http://localhost:5173`
+- Connexion admin : `http://localhost:5173/admin`
+- Gestion des contenus : `http://localhost:5173/admin`
+
+L'éditeur admin permet de modifier l'objet complet d'une fiche en JSON : nom, slug, groupe, tagline, résumé, paragraphes, catégorie, format, audience, sujets, points forts, équipe, visualisation (y compris ses lignes) et liens. Les routes de création, modification et suppression sont protégées par le JWT administrateur. Ne partage jamais le fichier `.env`.
+
+
+### Migration depuis l’ancienne collection `records`
+
+Si des contenus personnalisés existent déjà dans l’ancienne collection, lance `npm run migrate-legacy-records` depuis `showmate-backend`. Le script copie les contenus vers les collections spécialisées sans écraser les documents existants. Il conserve la collection historique par sécurité ; supprime-la uniquement après avoir vérifié les données dans MongoDB Compass.

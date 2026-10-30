@@ -9,22 +9,31 @@ import {
   projects,
   recordGroups,
   type ProjectGroup,
+  type Project,
 } from '../data/projects'
 import { useReveal } from '../hooks/useReveal'
 import { gsap, prefersReducedMotion } from '../lib/gsap'
 import ProjectVisual from './ProjectVisual'
 
 type Filter = 'All' | ProjectGroup
+const API = import.meta.env.VITE_API_URL || 'http://localhost:5000/api'
 
 export default function Projects() {
   const [filter, setFilter] = useState<Filter>('All')
+  const [records, setRecords] = useState<Project[]>(projects)
+  useEffect(() => {
+    const endpoints = [{ path: '/projects', group: 'Projects' }, { path: '/events', group: 'Events' }, { path: '/skills', group: 'Skills' }, { path: '/practice', group: 'Practice' }, { path: '/club', group: 'Club' }]
+    Promise.all(endpoints.map(async ({ path, group }) => { const response = await fetch(`${API}${path}`); if (!response.ok) return []; const data = await response.json(); return (data.items || []).map((item: any) => ({ ...item, group, title: item.title || item.name, category: item.category || group, format: item.format || item.level || item.difficulty || '', audience: item.audience || 'Open to all', description: Array.isArray(item.description) ? item.description : item.description ? [item.description] : [], topics: item.topics || [], highlights: item.highlights || item.outcomes || item.activities || item.rules || [], team: item.team || item.organizer || item.instructor || item.contact || '', visual: item.visual && ['path', 'attack', 'brief', 'checklist'].includes(item.visual.id) ? { id: item.visual.id, file: item.visual.file || item.name || '', status: item.visual.status || item.status || 'published', command: item.visual.command || '', rows: Array.isArray(item.visual.rows) ? item.visual.rows : [], foot: item.visual.foot || item.location || item.duration || '' } : { id: group === 'Projects' ? 'path' : 'brief', file: item.name || '', status: item.status || 'published', command: '', rows: (item.topics || item.highlights || []).map((label: string) => ({ label, note: '' })), foot: item.location || item.duration || '' }, links: item.links || item.resources || [] })) }))
+      .then((collections) => { const remote = collections.flat(); if (remote.length) setRecords(remote as Project[]) })
+      .catch(() => { /* Keep the bundled archive available when the API is offline. */ })
+  }, [])
   const rootRef = useReveal<HTMLElement>({ stagger: 0.04 })
   const boardRef = useRef<HTMLDivElement>(null)
   const mounted = useRef(false)
 
   const visibleProjects = useMemo(
-    () => (filter === 'All' ? projects : projects.filter((project) => project.group === filter)),
-    [filter],
+    () => (filter === 'All' ? records : records.filter((project) => project.group === filter)),
+    [filter, records],
   )
 
   const leadProjects = visibleProjects.filter((project) => project.group === 'Projects')
@@ -84,11 +93,11 @@ export default function Projects() {
             onClick={() => setFilter(group)}
           >
             {group}
-            <span className="filter-n">{group === 'All' ? projects.length : countByGroup(group)}</span>
+            <span className="filter-n">{group === 'All' ? records.length : records.filter((project) => project.group === group).length}</span>
           </button>
         ))}
         <span className="filter-count" aria-live="polite">
-          {visibleProjects.length} of {projects.length} records
+          {visibleProjects.length} of {records.length} records
         </span>
       </div>
 

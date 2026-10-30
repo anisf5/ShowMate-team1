@@ -1,0 +1,56 @@
+/* Admin workspace — follows Showmate's existing terminal / neon-green direction */
+.admin-page{min-height:100vh;background:var(--bg);color:var(--ink);padding:clamp(22px,4vw,56px) var(--pad);padding-top:calc(70px + var(--pad));}
+.admin-page button,.admin-page input,.admin-page textarea{font:inherit}
+.admin-page button{cursor:pointer}
+.admin-page button:disabled{opacity:.55;cursor:wait}
+.admin-page input,.admin-page textarea{width:100%;background:var(--bg-2);color:var(--ink);border:1px solid var(--line);border-radius:0;padding:12px 13px;outline:none}
+.admin-page input:focus,.admin-page textarea:focus{border-color:var(--green)}
+.admin-login{width:min(100%,460px);margin:7vh auto 0;border:1px solid var(--line);padding:clamp(24px,5vw,42px);background:var(--tile)}
+.admin-back{display:inline-flex;align-items:center;gap:8px;color:var(--ink-2);font-size:13px;margin-bottom:44px}
+.admin-eyebrow{font:11px var(--font-mono);letter-spacing:.08em;text-transform:uppercase;color:var(--green);margin:0 0 12px}
+.admin-login h1,.admin-heading h1{font-size:clamp(38px,5vw,64px);line-height:.98;letter-spacing:-.055em;margin:0 0 16px}
+.admin-login h1 span,.admin-heading h1 span,.admin-editor-head h2{color:var(--green)}
+.admin-muted{color:var(--ink-2);line-height:1.6;font-size:14px}
+.admin-login form{display:grid;gap:18px;margin-top:30px}
+.admin-login label{display:grid;gap:8px;font-size:12px;color:var(--ink-2)}
+.admin-primary,.admin-ghost,.admin-danger,.admin-icon{display:inline-flex;align-items:center;justify-content:center;gap:9px;border:1px solid transparent;padding:12px 15px;font-size:12px;font-weight:650}
+.admin-primary{background:var(--green);color:var(--on-green)}
+.admin-ghost,.admin-icon{background:var(--tile);color:var(--ink);border-color:var(--line)}
+.admin-danger{background:transparent;color:#ff7777;border-color:rgba(255,119,119,.35)}
+.admin-message{border-left:2px solid var(--green);padding:10px 12px;background:var(--tile);font-size:13px;line-height:1.5;margin-top:16px;color:var(--ink)}
+.admin-top{display:flex;align-items:center;justify-content:space-between;gap:20px;border-bottom:1px solid var(--line);padding-bottom:18px}
+.admin-top>div{display:flex;align-items:center;gap:20px}
+.admin-top .admin-eyebrow{margin:0}
+.admin-brand{font-weight:800;letter-spacing:-.04em}.admin-brand span{color:var(--green)}
+.admin-heading{display:flex;align-items:end;justify-content:space-between;gap:24px;padding:42px 0 30px}
+.admin-heading .admin-muted{max-width:650px}
+.admin-new{flex:none}
+.admin-layout{display:grid;grid-template-columns:minmax(250px,330px) minmax(0,1fr);gap:var(--gap);align-items:start}
+.admin-list,.admin-editor{border:1px solid var(--line);background:var(--tile);min-width:0}
+.admin-list-tools{display:flex;gap:8px;padding:12px;border-bottom:1px solid var(--line)}
+.admin-list-tools input{font-size:12px}
+.admin-icon{padding:10px;flex:none}
+.admin-filters{display:flex;flex-wrap:wrap;gap:4px;padding:10px;border-bottom:1px solid var(--line)}
+.admin-filters button{background:var(--bg-2);border:1px solid transparent;color:var(--ink-2);font-size:10px;padding:7px 8px}
+.admin-filters button.active{background:var(--green);color:var(--on-green)}
+.admin-count{font:10px var(--font-mono);color:var(--ink-2);padding:0 13px}
+.admin-records{max-height:65vh;overflow:auto}
+.admin-record{display:grid;text-align:left;width:100%;gap:5px;padding:12px 14px;border:0;border-top:1px solid var(--line);background:transparent;color:var(--ink)}
+.admin-record:hover,.admin-record.selected{background:var(--bg-2);box-shadow:inset 2px 0 var(--green)}
+.admin-record span,.admin-record small{font:10px var(--font-mono);color:var(--ink-2)}
+.admin-record span{color:var(--green)}
+.admin-record strong{font-size:13px;font-weight:600}
+.admin-editor{padding:clamp(16px,2.5vw,28px)}
+.admin-editor-head{display:flex;justify-content:space-between;align-items:center;gap:18px;border-bottom:1px solid var(--line);padding-bottom:20px}
+.admin-editor-head h2{margin:0;font-size:clamp(20px,3vw,30px);letter-spacing:-.04em}
+.admin-editor-actions{display:flex;gap:8px;flex-wrap:wrap}
+.admin-hint{color:var(--ink-2);font-size:12px;line-height:1.7;margin:18px 0}
+.admin-hint code{font-family:var(--font-mono);color:var(--green)}
+.admin-json{min-height:58vh;resize:vertical;font:12px/1.65 var(--font-mono)!important;tab-size:2;white-space:pre}
+.admin-empty{min-height:50vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:30px}
+.admin-empty>span{color:var(--green);font-size:40px}.admin-empty h2{margin:18px 0 4px}.admin-empty p{max-width:380px;color:var(--ink-2);font-size:13px;line-height:1.6}
+@media(max-width:850px){.admin-layout{grid-template-columns:1fr}.admin-records{max-height:260px}.admin-heading{align-items:start;flex-direction:column}.admin-editor-head{align-items:start;flex-direction:column}.admin-top>div{gap:8px;align-items:end;flex-direction:column}.admin-top .admin-eyebrow{display:none}}
+
+/* Human-friendly record form; fields remain aligned with the existing record schema. */
+.admin-form{padding-top:8px}.admin-form h3{font:11px var(--font-mono);letter-spacing:.08em;text-transform:uppercase;color:var(--green);border-bottom:1px solid var(--line);padding:18px 0 12px;margin:10px 0 16px}.admin-fields{display:grid;gap:16px}.admin-fields.two{grid-template-columns:repeat(2,minmax(0,1fr))}.admin-fields label{display:grid;gap:7px;color:var(--ink-2);font-size:12px;min-width:0}.admin-fields label small{font-size:10px;color:var(--ink-2);opacity:.8}.admin-fields .wide{grid-column:1/-1}.admin-fields textarea,.admin-list-editor{resize:vertical;min-height:44px;font:13px/1.6 var(--font-mono)!important}.admin-fields select{width:100%;background:var(--bg-2);color:var(--ink);border:1px solid var(--line);border-radius:0;padding:12px 13px;outline:none}.admin-fields select:focus{border-color:var(--green)}.admin-form-note{font-size:12px;color:var(--ink-2);line-height:1.6}.admin-form-note code{color:var(--green);font-family:var(--font-mono)}.admin-list-editor{width:100%;background:var(--bg-2);color:var(--ink);border:1px solid var(--line);padding:12px 13px;outline:none}.admin-list-editor:focus{border-color:var(--green)}
+@media(max-width:650px){.admin-fields.two{grid-template-columns:1fr}.admin-fields .wide{grid-column:auto}}

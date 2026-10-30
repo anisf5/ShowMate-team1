@@ -7,6 +7,7 @@ import { prefersReducedMotion } from './lib/gsap'
 import Home from './pages/Home'
 import NotFound from './pages/NotFound'
 import ProjectDetail from './pages/ProjectDetail'
+import Admin from './pages/Admin'
 
 /** Scrolls to the hash target on route/hash change, or to the top on a new page. */
 function ScrollManager() {
@@ -45,6 +46,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/projects/:slug" element={<ProjectDetail />} />
+        <Route path="/admin" element={<Admin />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </>

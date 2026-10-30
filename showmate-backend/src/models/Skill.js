@@ -1,0 +1,5 @@
+import mongoose from 'mongoose'
+import { visualSchema } from './visualSchema.js'
+const linkSchema = new mongoose.Schema({ label: String, href: String }, { _id: false })
+const schema = new mongoose.Schema({ slug: { type: String, required: true, unique: true, lowercase: true, trim: true }, name: { type: String, required: true, trim: true, maxlength: 160 }, tagline: { type: String, default: '' }, summary: { type: String, default: '' }, description: { type: [String], default: [] }, category: { type: String, default: 'Technical track' }, level: { type: String, default: 'Beginner' }, duration: { type: String, default: '' }, prerequisites: { type: [String], default: [] }, topics: { type: [String], default: [] }, outcomes: { type: [String], default: [] }, instructor: { type: String, default: '' }, visual: { type: visualSchema, default: () => ({}) }, resources: { type: [linkSchema], default: [] }, imageUrl: { type: String, default: '' }, status: { type: String, enum: ['draft','published'], default: 'published' } }, { timestamps: true })
+export default mongoose.model('Skill', schema)
