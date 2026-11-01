@@ -36,6 +36,10 @@ export interface Project {
   highlights: string[]
   /** Who runs the record, in the club's own terms. */
   team: string
+  /** Photograph ids from `src/data/photos.ts`: the lead image first, then the rest. */
+  photos: string[]
+  /** Flagship events only: where the event sits in the member journey. */
+  stage?: string
   visual: ProjectVisual
   links: Array<{ label: string; href: string }>
 }
@@ -58,7 +62,7 @@ export const groupMeta: Record<ProjectGroup, { title: string; note: string }> = 
   },
   Events: {
     title: 'Flagship events',
-    note: 'The three events the club is known for, from initiation to conference.',
+    note: 'Three events in the order a member meets them: initiation, fundamentals, the conference.',
   },
   Skills: {
     title: 'Technical tracks',
@@ -79,7 +83,8 @@ export const groupMeta: Record<ProjectGroup, { title: string; note: string }> = 
  * The deck publishes no dates for individual sessions and no repository or
  * demo links, so neither is invented here.
  */
-export const projects: Project[] = [
+export const projects: Project[
+] = [
   {
     slug: 'shellpath',
     name: 'ShellPath',
@@ -102,6 +107,8 @@ export const projects: Project[] = [
       'Last year covered active directory, malware development, web exploitation and blue teaming',
     ],
     team: 'A team of Shellmates mentors',
+    photos: ['pair-laptop', 'lan-night', 'student-laptop', 'opening-talk'],
+
     visual: {
       id: 'path',
       file: 'shellpath / mentor track',
@@ -139,6 +146,8 @@ export const projects: Project[] = [
       'Used as demonstrations at stands and events',
     ],
     team: 'Member teams, working in collaboration',
+    photos: ['bsides-audience', 'bsides-hall', 'lecture-hall', 'check-in'],
+
     visual: {
       id: 'attack',
       file: 'attacks / isolated-lab',
@@ -175,6 +184,9 @@ export const projects: Project[] = [
       'Opportunities to learn from experts',
     ],
     team: 'Shellmates organisers and expert speakers',
+    stage: 'Initiation',
+    photos: ['opening-talk', 'lan-night', 'check-in', 'pair-laptop'],
+
     visual: {
       id: 'brief',
       file: 'events / hack-ini',
@@ -187,43 +199,6 @@ export const projects: Project[] = [
         { label: 'open entry', note: 'no prior experience', value: 'all' },
       ],
       foot: 'held for many years · open to everyone interested',
-    },
-    links: [],
-  },
-  {
-    slug: 'bsides-algiers',
-    name: 'BSides Algiers',
-    tagline: 'A community security conference with talks, workshops and an advanced CTF.',
-    summary:
-      'Part of the global BSides network: a Shellmates-organised conference with expert talks, workshops and an advanced Capture The Flag competition.',
-    description: [
-      'BSides Algiers is the club’s conference. It follows the BSides model of community-driven security events and is organised by Shellmates in Algiers.',
-      'The programme combines expert talks, hands-on workshops and an advanced CTF, bringing the wider security community into the same room.',
-      'The club’s presentation records the first online qualification phase in December 2020. The conference has been part of the club’s calendar since then.',
-    ],
-    group: 'Events',
-    category: 'Flagship event',
-    format: 'Conference',
-    audience: 'Open to all',
-    topics: ['Conference talks', 'Workshops', 'Advanced CTF', 'Community'],
-    highlights: [
-      'Expert talks',
-      'Hands-on workshops',
-      'An advanced CTF competition',
-    ],
-    team: 'Shellmates organisers, speakers and guests',
-    visual: {
-      id: 'brief',
-      file: 'events / bsides-algiers',
-      status: 'community',
-      command: '$ open events/bsides-algiers',
-      rows: [
-        { label: 'expert talks', note: 'the main track', value: 'talks' },
-        { label: 'workshops', note: 'hands-on sessions', value: 'practice' },
-        { label: 'advanced CTF', note: 'the competition', value: 'ctf' },
-        { label: 'community', note: 'the wider room', value: 'open' },
-      ],
-      foot: 'talks · workshops · advanced CTF',
     },
     links: [],
   },
@@ -254,6 +229,9 @@ export const projects: Project[] = [
       'A map of the season ahead',
     ],
     team: 'Shellmates mentors and workshop leads',
+    stage: 'Fundamentals',
+    photos: ['lecture-hall', 'pair-laptop', 'student-laptop', 'opening-talk'],
+
     visual: {
       id: 'checklist',
       file: 'bootcamp / categories',
@@ -267,6 +245,46 @@ export const projects: Project[] = [
         { label: 'Cryptography', note: 'securing information', value: 'crypto' },
       ],
       foot: 'five categories · fundamentals first',
+    },
+    links: [],
+  },
+  {
+    slug: 'bsides-algiers',
+    name: 'BSides Algiers',
+    tagline: 'A community security conference with talks, workshops and an advanced CTF.',
+    summary:
+      'Part of the global BSides network: a Shellmates-organised conference with expert talks, workshops and an advanced Capture The Flag competition.',
+    description: [
+      'BSides Algiers is the club’s conference. It follows the BSides model of community-driven security events and is organised by Shellmates in Algiers.',
+      'The programme combines expert talks, hands-on workshops and an advanced CTF, bringing the wider security community into the same room.',
+      'The club’s presentation records the first online qualification phase in December 2020. The conference has been part of the club’s calendar since then.',
+    ],
+    group: 'Events',
+    category: 'Flagship event',
+    format: 'Conference',
+    audience: 'Open to all',
+    topics: ['Conference talks', 'Workshops', 'Advanced CTF', 'Community'],
+    highlights: [
+      'Expert talks',
+      'Hands-on workshops',
+      'An advanced CTF competition',
+    ],
+    team: 'Shellmates organisers, speakers and guests',
+    stage: 'Conference',
+    photos: ['bsides-stage', 'bsides-audience', 'speakers', 'check-in'],
+
+    visual: {
+      id: 'brief',
+      file: 'events / bsides-algiers',
+      status: 'community',
+      command: '$ open events/bsides-algiers',
+      rows: [
+        { label: 'expert talks', note: 'the main track', value: 'talks' },
+        { label: 'workshops', note: 'hands-on sessions', value: 'practice' },
+        { label: 'advanced CTF', note: 'the competition', value: 'ctf' },
+        { label: 'community', note: 'the wider room', value: 'open' },
+      ],
+      foot: 'talks · workshops · advanced CTF',
     },
     links: [],
   },
@@ -291,6 +309,8 @@ export const projects: Project[] = [
       'Web security vulnerabilities',
     ],
     team: 'Shellmates mentors',
+    photos: ['pair-laptop', 'student-laptop', 'lan-night', 'opening-talk'],
+
     visual: {
       id: 'path',
       file: 'track / web-pentesting',
@@ -327,6 +347,8 @@ export const projects: Project[] = [
       'Challenge-based practice',
     ],
     team: 'Shellmates mentors',
+    photos: ['student-laptop', 'pair-laptop', 'lecture-hall', 'opening-talk'],
+
     visual: {
       id: 'path',
       file: 'track / cryptography',
@@ -363,6 +385,8 @@ export const projects: Project[] = [
       'Understanding software security',
     ],
     team: 'Shellmates mentors',
+    photos: ['ctf-winners', 'lan-night', 'student-laptop', 'pair-laptop'],
+
     visual: {
       id: 'path',
       file: 'track / pwn',
@@ -398,6 +422,8 @@ export const projects: Project[] = [
       'Workshop format',
     ],
     team: 'Shellmates mentors',
+    photos: ['student-laptop', 'pair-laptop', 'ctf-winners', 'lan-night'],
+
     visual: {
       id: 'path',
       file: 'track / reverse-engineering',
@@ -433,6 +459,8 @@ export const projects: Project[] = [
       'Investigation-led activities',
     ],
     team: 'Shellmates mentors',
+    photos: ['check-in', 'bsides-audience', 'bsides-hall', 'lecture-hall'],
+
     visual: {
       id: 'path',
       file: 'track / digital-forensics',
@@ -468,6 +496,8 @@ export const projects: Project[] = [
       'Written by mentors',
     ],
     team: 'ShellPath mentors',
+    photos: ['bsides-hall', 'bsides-audience', 'bsides-stage', 'lecture-hall'],
+
     visual: {
       id: 'path',
       file: 'shellpath / active-directory',
@@ -503,6 +533,8 @@ export const projects: Project[] = [
       'Explained from the inside',
     ],
     team: 'ShellPath mentors',
+    photos: ['lan-night', 'pair-laptop', 'student-laptop', 'check-in'],
+
     visual: {
       id: 'path',
       file: 'shellpath / malware',
@@ -538,6 +570,8 @@ export const projects: Project[] = [
       'Advanced ShellPath content',
     ],
     team: 'ShellPath mentors',
+    photos: ['bsides-stage', 'bsides-hall', 'bsides-audience', 'lecture-hall'],
+
     visual: {
       id: 'path',
       file: 'shellpath / blue-team',
@@ -573,6 +607,8 @@ export const projects: Project[] = [
       'Knowledge sharing',
     ],
     team: 'Members, learning together',
+    photos: ['student-laptop', 'pair-laptop', 'lan-night', 'opening-talk'],
+
     visual: {
       id: 'brief',
       file: 'practice / htb-meetups',
@@ -609,6 +645,8 @@ export const projects: Project[] = [
       'Team-based exercises',
     ],
     team: 'Shellmates organisers',
+    photos: ['group-outside', 'refreshments', 'speakers', 'lecture-hall'],
+
     visual: {
       id: 'brief',
       file: 'club / internal-events',
@@ -644,6 +682,8 @@ export const projects: Project[] = [
       'Technical demonstrations',
     ],
     team: 'Shellmates organisers',
+    photos: ['speakers', 'check-in', 'bsides-hall', 'group-outside'],
+
     visual: {
       id: 'brief',
       file: 'club / external-events',
@@ -679,6 +719,8 @@ export const projects: Project[] = [
       'Technical skills',
     ],
     team: 'Shellmates mentors',
+    photos: ['lecture-hall', 'pair-laptop', 'student-laptop', 'check-in'],
+
     visual: {
       id: 'path',
       file: 'track / workshops',
@@ -714,6 +756,8 @@ export const projects: Project[] = [
       'Applied cybersecurity knowledge',
     ],
     team: 'The club’s CTF organisers',
+    photos: ['ctf-winners', 'lan-night', 'pair-laptop', 'student-laptop'],
+
     visual: {
       id: 'checklist',
       file: 'practice / ctf',
@@ -751,6 +795,8 @@ export const projects: Project[] = [
       'Connections within the club',
     ],
     team: 'Shellmates members',
+    photos: ['refreshments', 'group-outside', 'speakers', 'pair-laptop'],
+
     visual: {
       id: 'brief',
       file: 'club / recreation',
@@ -786,6 +832,8 @@ export const projects: Project[] = [
       'Members develop beyond security',
     ],
     team: 'The club’s departments',
+    photos: ['lecture-hall', 'pair-laptop', 'student-laptop', 'check-in'],
+
     visual: {
       id: 'brief',
       file: 'club / departments',
@@ -822,6 +870,8 @@ export const projects: Project[] = [
       'At stands and events',
     ],
     team: 'Member demonstrators',
+    photos: ['speakers', 'pair-laptop', 'lecture-hall', 'refreshments'],
+
     visual: {
       id: 'attack',
       file: 'club / demonstrations',
@@ -858,6 +908,8 @@ export const projects: Project[] = [
       'Practical skills',
     ],
     team: 'Member teams',
+    photos: ['pair-laptop', 'lan-night', 'ctf-winners', 'check-in'],
+
     visual: {
       id: 'checklist',
       file: 'practice / team-challenges',

@@ -41,7 +41,8 @@
 
 .nav-logo .logo-mark {
   flex: none;
-  color: var(--green);
+  height: 28px;
+  width: auto;
 }
 
 .nav-links {

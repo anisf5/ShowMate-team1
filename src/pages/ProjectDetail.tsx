@@ -4,54 +4,10 @@ import { ArrowLeft, ArrowRight, ArrowUpRight } from 'lucide-react'
 
 import Footer from '../components/Footer'
 import ProjectVisual from '../components/ProjectVisual'
+import { photoById } from '../data/photos'
 import { projectBySlug, projects } from '../data/projects'
 import { useReveal } from '../hooks/useReveal'
 import NotFound from './NotFound'
-
-const photos = [
-  {
-    src: '/assets/dec-vt100-terminal.jpg',
-    width: 1920,
-    height: 1704,
-    alt: 'A vintage DEC VT100 terminal on a desk, its screen switched off.',
-    caption: 'DEC VT100 terminal — archive reference',
-  },
-  {
-    src: '/assets/network-switches.jpg',
-    width: 1920,
-    height: 1277,
-    alt: 'A rack of network switches, their ports and status lights in rows.',
-    caption: 'Network switches — infrastructure reference',
-  },
-  {
-    src: '/assets/macro-circuit-board.jpg',
-    width: 1920,
-    height: 1280,
-    alt: 'A circuit board photographed close up, its green solder mask and gold traces in sharp focus.',
-    caption: 'Circuit board, macro — material reference',
-  },
-  {
-    src: '/assets/servers-in-a-rack.jpg',
-    width: 1886,
-    height: 2835,
-    alt: 'Servers in a rack seen from the front, cables bundled at the side.',
-    caption: 'Servers in a rack — hardware reference',
-  },
-  {
-    src: '/assets/green-circuit-board-ii-2389301870.jpg',
-    width: 1920,
-    height: 1440,
-    alt: 'Close-up of glowing green circuit-board traces on a dark board.',
-    caption: 'Circuit traces — material reference',
-  },
-  {
-    src: '/assets/efta00002522-cluttered-server-rack-filled-with-colorful.jpg',
-    width: 1152,
-    height: 768,
-    alt: 'A server rack densely patched with orange, blue and yellow network cables.',
-    caption: 'Server rack, cabled — infrastructure reference',
-  },
-]
 
 export default function ProjectDetail() {
   const { slug } = useParams()
@@ -74,8 +30,8 @@ export default function ProjectDetail() {
 
   const index = projects.findIndex((item) => item.slug === project.slug)
   const next = projects[(index + 1) % projects.length]
-  const photo = photos[index % photos.length]
-  const refs = [1, 2, 3].map((offset) => photos[(index + offset) % photos.length])
+  const gallery = project.photos.map(photoById)
+  const [photo, ...refs] = gallery
   const longTitle = project.name.length > 20
 
   return (
@@ -117,8 +73,12 @@ export default function ProjectDetail() {
               height={photo.height}
               alt={photo.alt}
               loading="lazy"
+              decoding="async"
+              style={{ objectPosition: photo.position }}
             />
-            <figcaption>Reference photograph — {photo.caption}</figcaption>
+            <figcaption>
+              Club photograph — {photo.caption}
+            </figcaption>
           </figure>
         </div>
 
@@ -180,7 +140,7 @@ export default function ProjectDetail() {
           </aside>
         </div>
 
-        <section className="detail-refs" ref={refsRef} aria-label="Reference photographs">
+        <section className="detail-refs" ref={refsRef} aria-label="Photographs">
           <div className="detail-refs-grid">
             {refs.map((item) => (
               <figure key={item.src} data-reveal>
@@ -190,8 +150,12 @@ export default function ProjectDetail() {
                   height={item.height}
                   alt={item.alt}
                   loading="lazy"
+                  decoding="async"
+                  style={{ objectPosition: item.position }}
                 />
-                <figcaption>{item.caption}</figcaption>
+                <figcaption>
+                  Club photograph — {item.caption}
+                </figcaption>
               </figure>
             ))}
           </div>

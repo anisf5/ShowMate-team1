@@ -10,6 +10,7 @@ import {
   recordGroups,
   type ProjectGroup,
 } from '../data/projects'
+import { photoById } from '../data/photos'
 import { useReveal } from '../hooks/useReveal'
 import { gsap, prefersReducedMotion } from '../lib/gsap'
 import ProjectVisual from './ProjectVisual'
@@ -29,6 +30,8 @@ export default function Projects() {
 
   const leadProjects = visibleProjects.filter((project) => project.group === 'Projects')
 
+  const statementPhoto = photoById('bsides-hall')
+
   const visibleGroups = groupOrder.filter(
     (group) => group !== 'Projects' && (filter === 'All' || filter === group),
   )
@@ -44,7 +47,7 @@ export default function Projects() {
     if (prefersReducedMotion()) return
 
     const items = board.querySelectorAll<HTMLElement>(
-      '.pcard, .event-tile, .record-row, .archive-band-head',
+      '.pcard, .event-card-item, .record-row, .archive-band-head',
     )
     if (!items.length) return
 
@@ -145,16 +148,16 @@ export default function Projects() {
         {filter === 'All' && (
           <figure className="archive-statement" data-reveal>
             <img
-              src="/assets/dec-vt100-terminal.jpg"
-              width={1920}
-              height={1704}
-              alt="A vintage DEC VT100 terminal on a desk, its screen switched off."
+              src={statementPhoto.src}
+              width={statementPhoto.width}
+              height={statementPhoto.height}
+              alt={statementPhoto.alt}
               loading="lazy"
               decoding="async"
             />
             <figcaption>
               <code>/* Where there is a shell, there is a way */</code>
-              <span>22 records · Shellmates, ESI Algiers</span>
+              <span>22 records · Shellmates, ESI Algiers · BSides Algiers, the club’s conference</span>
             </figcaption>
           </figure>
         )}
@@ -176,27 +179,44 @@ export default function Projects() {
               </div>
 
               {group === 'Events' ? (
-                <div className="event-grid">
-                  {records.map((record) => (
-                    <Link
-                      key={record.slug}
-                      to={`/projects/${record.slug}`}
-                      className="event-tile"
-                      data-reveal
-                    >
-                      <h4>{record.name}</h4>
-                      <p>{record.summary}</p>
-                      <span className="event-tile-foot">
-                        <span>
-                          {record.format} · {record.audience}
-                        </span>
-                        <span className="event-tile-arrow" aria-hidden="true">
-                          ↗
-                        </span>
-                      </span>
-                    </Link>
-                  ))}
-                </div>
+                <ol className="event-track">
+                  {records.map((record) => {
+                    const lead = photoById(record.photos[0])
+                    return (
+                      <li key={record.slug} className="event-card-item" data-reveal>
+                        <Link className="event-card" to={`/projects/${record.slug}`}>
+                          <figure className="event-card-media">
+                            <img
+                              src={lead.src}
+                              width={lead.width}
+                              height={lead.height}
+                              alt={lead.alt}
+                              loading="lazy"
+                              decoding="async"
+                              style={{ objectPosition: lead.position }}
+                            />
+                          </figure>
+
+                          <div className="event-card-body">
+                            <h4>{record.name}</h4>
+                            <p className="event-stage">{record.stage}</p>
+                            <p className="event-card-desc">{record.summary}</p>
+
+                            <span className="event-card-foot">
+                              <span>
+                                {record.format} · {record.audience}
+                              </span>
+                              <span className="event-card-link">
+                                Open record
+                                <ArrowUpRight size={15} aria-hidden="true" />
+                              </span>
+                            </span>
+                          </div>
+                        </Link>
+                      </li>
+                    )
+                  })}
+                </ol>
               ) : (
                 <ul className="record-list">
                   {records.map((record) => (

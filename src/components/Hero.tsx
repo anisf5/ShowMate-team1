@@ -114,14 +114,14 @@ export default function Hero() {
 
         <div className="hero-photo-a photo-tile tile">
           <img
-            src="/assets/servers-in-a-rack.jpg"
-            width={1886}
-            height={2835}
-            alt="A server rack photographed from the front, its network cables bundled in green."
+            src="/assets/club/pair-laptop.jpg"
+            width={921}
+            height={1206}
+            alt="Two students leaning over a laptop together during a club session."
             fetchPriority="high"
             decoding="async"
           />
-          <span className="photo-cap">Server rack, green cabling</span>
+          <span className="photo-cap">Working session, members</span>
         </div>
 
         <div className="hero-statement tile">
@@ -148,14 +148,13 @@ export default function Hero() {
 
         <div className="hero-photo-b photo-tile tile">
           <img
-            src="/assets/green-circuit-board-ii-2389301870.jpg"
-            width={1920}
-            height={1440}
-            alt="Close-up of glowing green circuit-board traces on a dark board."
-            loading="lazy"
+            src="/assets/club/group-outside.jpg"
+            width={809}
+            height={507}
+            alt="A large group of students posing outdoors beside a green Shellmates banner."
             decoding="async"
           />
-          <span className="photo-cap">Circuit traces, backlit</span>
+          <span className="photo-cap">Members, group photograph</span>
         </div>
       </div>
     </section>

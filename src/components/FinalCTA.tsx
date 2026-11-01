@@ -38,10 +38,10 @@ export default function FinalCTA() {
 
         <div className="cta-photo" data-reveal>
           <img
-            src="/assets/network-switches.jpg"
-            width={1920}
-            height={1277}
-            alt="Network switches in a rack, patched with blue and grey cables."
+            src="/assets/club/bsides-hall.jpg"
+            width={1080}
+            height={720}
+            alt="Rows of attendees filling a large conference hall during a talk."
             loading="lazy"
             decoding="async"
           />

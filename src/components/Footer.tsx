@@ -6,9 +6,20 @@ export default function Footer() {
   return (
     <footer className="footer">
       <div className="footer-mark">
-        <p className="footer-wordmark" aria-hidden="true">
-          SHOW<span>MATE</span>
-        </p>
+        <div className="footer-brand">
+          <img
+            className="footer-crest"
+            src="/assets/Logo/shellmate-mark.png"
+            alt=""
+            width={79}
+            height={104}
+            loading="lazy"
+            decoding="async"
+          />
+          <p className="footer-wordmark" aria-hidden="true">
+            SHOW<span>MATE</span>
+          </p>
+        </div>
         <p className="footer-mark-meta">
           Where there is a shell, there is a way.
           <br />
@@ -61,25 +72,6 @@ export default function Footer() {
             </li>
           </ul>
         </div>
-
-        <div className="footer-note">
-          <p>
-            Club facts and copy come from the Shellmates club presentation. Official channels stay
-            unlinked until they are verified; add them in <code>src/data/</code>.
-          </p>
-        </div>
-      </div>
-
-      <div className="footer-credits">
-        <p>
-          Photographs: Abigor (CC BY-SA 3.0), Ingo Dierking (CC BY-SA 4.0), Jason Scott (CC BY 2.0),
-          Peter Shanks (CC BY 2.0), ShakataGaNai (CC BY-SA 3.0) and the FBI (public domain), via
-          Wikimedia Commons. They show the world around the club, not its own work.
-        </p>
-        <p>
-          Assets and licences are recorded in <code>public/assets/credits.json</code>. Project
-          previews are drawn in the page: they are interface studies, not screenshots.
-        </p>
       </div>
 
       <div className="footer-bottom">

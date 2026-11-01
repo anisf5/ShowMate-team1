@@ -43,10 +43,10 @@ export default function Stats() {
           </p>
           <div className="stats-photo">
             <img
-              src="/assets/efta00002522-cluttered-server-rack-filled-with-colorful.jpg"
-              width={1152}
-              height={768}
-              alt="A server rack densely patched with orange, blue and yellow network cables."
+              src="/assets/club/lecture-hall.jpg"
+              width={1046}
+              height={1057}
+              alt="Students seated across a tiered lecture hall during a session."
               loading="lazy"
               decoding="async"
             />

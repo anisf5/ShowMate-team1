@@ -33,7 +33,7 @@ npm run typecheck  # tsc --noEmit
 
 - **Filter the board** by group: `All` (22), `Projects` (2), `Events` (3), `Skills` (9),
   `Practice` (3), `Club` (5). The count updates with the view.
-- **Read a record** from a lead project card, an event tile or a ledger row, then follow *Next
+- **Read a record** from a lead project card, a flagship event card or a ledger row, then follow *Next
   record* through the archive.
 - **Use the terminal** in the About section: `help`, `ls`, `cat <record>`, `find <term>`,
   `slogan`, `objective <name>`, `objectives`, `departments`, `stats`, `whoami`, `contact`,
@@ -50,32 +50,42 @@ npm run typecheck  # tsc --noEmit
 - Vanilla CSS, five files: `tokens`, `base`, `nav`, `sections`, `ui` (no CSS framework)
 - Self-hosted **Archivo Variable** (headings/body) and **JetBrains Mono Variable** (technical labels,
   terminal and code) through Fontsource — no font CDN
-- Photographs from Wikimedia Commons, stored in `public/assets/` — see [Photography](#photography)
+- Club photographs supplied with the presentation, stored in `public/assets/club/`. See
+  [Photography](#photography)
 
 ## Structure
 
 ```
-public/assets/          six photographs + credits.json (licences and credits)
+public/
+  assets/
+    club/          club photographs supplied with the club
+    Logo/          the Shellmates crest: mark, favicon icons
+    credits.json   club photograph credits
+media-source/       the original club PNGs (not shipped)
 src/
   App.tsx               shell, router and the skip link
   pages/                Home, ProjectDetail, NotFound
   components/           Navbar, Hero, Projects, ProjectVisual, About, Terminal,
                         Stats, Structure, FinalCTA, Footer, CommandPalette,
-                        ContactDialog, ShellMark, Cursor
-  data/                 site, projects, values, stats, departments
+                        ContactDialog, Cursor
+  data/                 site, projects, photos, values, stats, departments
   hooks/                useReveal (GSAP + ScrollTrigger), useCounter
   lib/gsap.ts           GSAP registration and the reduced-motion check
   styles/               tokens, base, nav, sections, ui
 ```
 
+The club crest is used from `public/assets/Logo/` (source `shellmate_logo.png`, optimized `shellmate-mark.png`,
+`icon-64.png`, `icon-180.png`) and lives in the navbar, the footer lockup and the favicon; the original stays
+in `media-source/Logo/`.
+
 The record previews are **drawn in the page** (`src/components/ProjectVisual.tsx`): each fragment is
 a small HTML/SVG interface study marked `data-ui` and hidden from assistive tech. Four layouts cover
 the archive — a mentor path, an attack chain, an event brief and a checklist.
 
-The photographs are reference imagery of the subject's world (racks, cabling, circuit boards, a
-VT100 terminal), not pictures of Shellmates' own work. The captions say so and the footer credits
-every file. Each record page shows a different lead photograph and three references, rotating
-through the six files.
+Photographs come from one place: the Shellmates archive itself, recorded in code. Club photographs
+were taken at Shellmates events; the credits are recorded in `public/assets/club/credits.json`. Each
+record names four of them in `projects.ts`, and the caption on screen reads *Club photograph*. Nothing
+is presented as a screenshot of a Shellmates project.
 
 ## Club content
 
@@ -94,7 +104,7 @@ The archive is grouped rather than flattened, because the 22 entries are not all
 | Group      | Records |
 | ---------- | ------- |
 | Projects   | ShellPath; Cybersecurity-Attacks |
-| Events     | Hack.INI; BSides Algiers; CyberSec Bootcamp |
+| Events     | Hack.INI; CyberSec Bootcamp; BSides Algiers |
 | Skills     | Web Pentesting; Cryptography; Pwn / Binary Exploitation; Reverse Engineering; Digital Forensics; Active Directory; Malware Development; Blue Teaming; Cybersecurity Workshops |
 | Practice   | Hack The Box Meetups; CTF Competitions; Team-Based Challenges |
 | Club       | Internal Events; External Events; Internal Recreational Activities; Department-Specific Workshops; Cybersecurity Demonstrations |
@@ -124,28 +134,49 @@ What is deliberately absent:
 
 ## Photography
 
-Six files in `public/assets/`, all from Wikimedia Commons. `public/assets/credits.json` records the
-title, creator, licence and source page for each one; the footer prints the same credits.
+One library, recorded in code:
 
-| File | Creator | Licence |
-| ---- | ------- | ------- |
-| `servers-in-a-rack.jpg` | Abigor | CC BY-SA 3.0 |
-| `efta00002522-cluttered-server-rack-filled-with-colorful.jpg` | Federal Bureau of Investigation | Public domain |
-| `macro-circuit-board.jpg` | Ingo Dierking | CC BY-SA 4.0 |
-| `dec-vt100-terminal.jpg` | Jason Scott | CC BY 2.0 |
-| `network-switches.jpg` | ShakataGaNai | CC BY-SA 3.0 |
-| `green-circuit-board-ii-2389301870.jpg` | Peter Shanks | CC BY 2.0 |
+- **Club crest** — `public/assets/Logo/`: the Shellmates emblem (source `shellmate_logo.png` in
+  `media-source/Logo/`, optimized derivatives `shellmate-mark.png`, `icon-64.png`, `icon-180.png`) used
+  in the navbar, the footer lockup and the favicon.
 
-The files are unmodified; the site applies a CSS grayscale/contrast filter at render time. The
-share-alike images are credited in the footer and in `credits.json`; keep both if you reuse them.
-None of the photographs shows a Shellmates project or event.
+- **Club photographs** — `public/assets/club/` (13 files), taken at Shellmates events and supplied
+  with the club material. `public/assets/club/credits.json` lists them and notes that the club should
+  confirm consent for the people shown before reusing them outside this archive. No stock or
+  third-party hardware photographs are used: the archive shows only the club's own events.
+
+| Photograph | Event |
+| ---- | ------- |
+| `bsides-stage.jpg` | BSides Algiers, stage and partners |
+| `bsides-audience.jpg` | BSides Algiers, the audience |
+| `bsides-hall.jpg` | BSides Algiers, the hall |
+| `group-outside.jpg` | Members, group photograph |
+| `refreshments.jpg` | Refreshments at an internal event |
+| `speakers.jpg` | Guests with their badges |
+| `lecture-hall.jpg` | A session in the lecture hall |
+| `check-in.jpg` | Check-in and lanyards |
+| `pair-laptop.jpg` | A working session, side by side |
+| `ctf-winners.jpg` | CTF winners on stage |
+| `student-laptop.jpg` | Working a challenge |
+| `lan-night.jpg` | The room during a club event |
+| `opening-talk.jpg` | Opening talk |
+
+The club PNGs were resized to at most 1400 px on the long edge and saved as JPEG (quality 82); the
+originals live in `media-source/` and are not shipped. The site renders every photograph in
+grayscale and restores colour on hover, so the palette stays quiet until you look closer. None of the
+photographs is a screenshot of a Shellmates project.
 
 ## Design notes
 
 The direction is a dense board of unequal tiles ("the well-kept board"): a two-by-two hero, two lead
-project cards in a 7/5 band, a full-width slogan photograph, three event tiles in a 5/4/3 band, and
-the remaining seventeen records as a grouped ledger of rows. The archive opens as a Unix session —
-terminal, paths, a `Ctrl+K` palette — and the slogan appears as the code comment it is.
+project cards in a 7/5 band, a full-width slogan photograph, three flagship events as photo cards on a
+staircase, and the remaining seventeen records as a grouped ledger of rows. The events run in the
+order a member meets them — Hack.INI (initiation), CyberSec Bootcamp (fundamentals), BSides Algiers
+(conference) — so the offset itself carries the sequence and no numerals are needed. Below 900 px the
+staircase becomes three horizontal photo-and-text rows, then three stacked cards.
+
+The archive opens as a Unix session — terminal, paths, a `Ctrl+K` palette — and the slogan appears as
+the code comment it is.
 
 Type is one sans (Archivo Variable) plus one mono (JetBrains Mono) for anything that is literally a
 command, a path, a label or a figure. The neon green is reserved for state and action, never for
@@ -167,4 +198,5 @@ node "<path-to>/design-taste-frontend/scripts/inspect.mjs" http://localhost:4173
 
 The home page and the detail pages pass that gate with **0 FAIL**. Its remaining warnings are
 defended in the design notes: recorded video was not used because no honest Shellmates footage was
-supplied, and the ledger rows are the archive's table, not a card grid.
+supplied, the ledger rows are the archive's table rather than a card grid, and the ten font sizes are
+one display scale plus two mono label sizes doing different jobs.

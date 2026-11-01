@@ -5,7 +5,6 @@ import { ArrowUpRight, Menu, Search, X } from 'lucide-react'
 import { site } from '../data/site'
 import { gsap, prefersReducedMotion } from '../lib/gsap'
 import CommandPalette from './CommandPalette'
-import ShellMark from './ShellMark'
 
 export default function Navbar() {
   const { pathname } = useLocation()
@@ -110,7 +109,14 @@ export default function Navbar() {
       <header className={`nav${stuck || menuOpen ? ' is-stuck' : ''}`}>
         <div className="nav-inner">
           <Link className="nav-logo" to="/#home" aria-label="Showmate home">
-            <ShellMark className="logo-mark" size={24} />
+            <img
+              className="logo-mark"
+              src="/assets/Logo/shellmate-mark.png"
+              alt=""
+              width={21}
+              height={28}
+              decoding="async"
+            />
             <span>
               SHOW<span className="accent">MATE</span>
             </span>

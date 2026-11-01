@@ -1,0 +1,19 @@
+{
+  "source": "Shellmates club archive",
+  "note": "Photographs taken at Shellmates events and supplied with the club material. They are not covered by the Wikimedia licences listed in ../credits.json. The club should confirm consent for the people shown before reusing them outside this archive.",
+  "files": [
+    { "file": "assets/club/bsides-stage.jpg", "caption": "BSides Algiers, stage and partners", "width": 1080, "height": 720 },
+    { "file": "assets/club/bsides-audience.jpg", "caption": "BSides Algiers, the audience", "width": 1080, "height": 720 },
+    { "file": "assets/club/bsides-hall.jpg", "caption": "BSides Algiers, the hall", "width": 1080, "height": 720 },
+    { "file": "assets/club/group-outside.jpg", "caption": "Members, group photograph", "width": 809, "height": 507 },
+    { "file": "assets/club/refreshments.jpg", "caption": "Refreshments at an internal event", "width": 1069, "height": 1080 },
+    { "file": "assets/club/speakers.jpg", "caption": "Guests with their badges", "width": 996, "height": 1106 },
+    { "file": "assets/club/lecture-hall.jpg", "caption": "A session in the lecture hall", "width": 1046, "height": 1057 },
+    { "file": "assets/club/check-in.jpg", "caption": "Check-in and lanyards", "width": 1079, "height": 1350 },
+    { "file": "assets/club/pair-laptop.jpg", "caption": "A working session, side by side", "width": 921, "height": 1206 },
+    { "file": "assets/club/ctf-winners.jpg", "caption": "CTF winners on stage", "width": 1080, "height": 1200 },
+    { "file": "assets/club/student-laptop.jpg", "caption": "Working a challenge", "width": 1000, "height": 1120 },
+    { "file": "assets/club/lan-night.jpg", "caption": "The room during a club event", "width": 1033, "height": 1033 },
+    { "file": "assets/club/opening-talk.jpg", "caption": "Opening talk", "width": 938, "height": 1106 }
+  ]
+}

@@ -28,7 +28,7 @@ export const stats: Stat[] = [
   {
     value: 3,
     label: 'Flagship events',
-    note: 'Hack.INI, BSides Algiers and CyberSec Bootcamp.',
+    note: 'Hack.INI, CyberSec Bootcamp and BSides Algiers.',
   },
   {
     value: 5,
