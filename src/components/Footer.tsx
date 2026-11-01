@@ -61,12 +61,14 @@ export default function Footer() {
         <div className="footer-col">
           <h2>Elsewhere</h2>
           <ul>
-            <li>
-              <span>GitHub — pending</span>
-            </li>
-            <li>
-              <span>Social — pending</span>
-            </li>
+            {site.channels.map((channel) => (
+              <li key={channel.label}>
+                <a href={channel.href} target="_blank" rel="noreferrer">
+                  {channel.label}
+                  <span className="footer-channel-handle"> {channel.handle}</span>
+                </a>
+              </li>
+            ))}
             <li>
               <span>Email — pending</span>
             </li>

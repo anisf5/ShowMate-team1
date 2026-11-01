@@ -12,13 +12,14 @@ export const site = {
     { id: 'structure', label: 'Structure', href: '#structure' },
   ],
   /**
-   * Official channels are intentionally empty: no verified Shellmates URLs
-   * were supplied with the brief. Add real ones here and they will appear in
-   * the footer, the contact panel and the terminal's `contact` command.
+   * Official channels, supplied with the club brief.
    */
-  channels: [] as Array<{ label: string; handle: string; href: string }>,
-  contactNote:
-    'Official Shellmates channels have not been supplied yet. Add verified links in src/data/site.ts.',
+  channels: [
+    { label: 'Instagram', handle: '@shellmates', href: 'https://www.instagram.com/shellmates/' },
+    { label: 'LinkedIn', handle: 'Shellmates Club', href: 'https://www.linkedin.com/company/shellmates-club/' },
+    { label: 'GitHub', handle: 'anisf5/ShowMate-team1', href: 'https://github.com/anisf5/ShowMate-team1' },
+  ],
+  contactNote: 'Official Shellmates channels: Instagram, LinkedIn and GitHub.',
 }
 
 export const sectionIds = site.nav.map((item) => item.id)

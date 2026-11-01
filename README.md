@@ -93,7 +93,7 @@ Everything the club supplied lives in `src/data/`:
 
 | File             | Holds                                                                 |
 | ---------------- | --------------------------------------------------------------------- |
-| `site.ts`        | Club name, **slogan**, nav, contact copy, official channels (empty)    |
+| `site.ts`        | Club name, **slogan**, nav, contact copy, official channels (Instagram, LinkedIn, GitHub) |
 | `projects.ts`    | All 22 records: group, category, format, audience, copy, topics, highlights, visual spec, links |
 | `values.ts`      | The three objectives from the club deck                               |
 | `stats.ts`       | The four figures in the ledger (2011, 8, 3, 5)                        |
@@ -111,8 +111,10 @@ The archive is grouped rather than flattened, because the 22 entries are not all
 
 What is deliberately absent:
 
-- **Official channels** — add verified URLs to `site.channels`; the footer, the contact panel and
-  the terminal's `contact` command read from that array.
+- **Official channels** — supplied with the brief and read from `site.channels` in
+  `src/data/site.ts`: Instagram (`@shellmates`), LinkedIn (Shellmates Club) and GitHub
+  (`anisf5/ShowMate-team1`). The footer, the contact panel and the terminal's `contact` command use
+  them; the email address stays pending.
 - **Record links** — the `links` array is empty for every record. While it is empty, the detail page
   prints a "no public link yet" note instead of inventing a URL.
 - **Dates** — the deck publishes no calendar, so records carry a factual format and audience, not a

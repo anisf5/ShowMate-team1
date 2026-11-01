@@ -58,14 +58,13 @@ export default function ContactDialog({ open, onClose }: Props) {
 
       <div className="dialog-body">
         <p>
-          This build was made without verified Shellmates channels, so it does not link to any.
-          Send the club a real address, GitHub or social profile and it drops straight in.
+          Official Shellmates channels are listed below, straight from the club record.
         </p>
 
         <div className="channel-list">
           {site.channels.length
             ? site.channels.map((channel) => (
-                <a key={channel.label} className="channel" href={channel.href}>
+                <a key={channel.label} className="channel" href={channel.href} target="_blank" rel="noreferrer">
                   <span>{channel.label}</span>
                   <span>{channel.handle}</span>
                 </a>
